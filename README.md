@@ -121,7 +121,7 @@ In order to install it is quite simple to clone or download this repository.
 For the cloning this repository to a local machine, just use the follows link:
 
 ```http
-https://github.com/ololx/sbc-bitpoll-expander
+https://github.com/ololx/sbc-bitpool-expander
 ```
 
 ### Using
@@ -149,6 +149,24 @@ For use it is required to:
 3. Enter the administrator credentials if necessary
 
 4. Reconnect a headphones to a local machine via `Bluetooth`
+
+### If you want a better result for your device 
+
+NOTE: It's universal settings and it works for the most devices. Below you can find settings for better sound quality on your device.
+If you want to watch your current settings:
+```bash
+sudo defaults read bluetoothaudiod 
+```
+or if you want reset it to default:
+```bash
+sudo defaults delete bluetoothaudiod
+```
+You may experement with "Apple Bitpool Min" setting. For example, the best sound on my device "Harman Kardon Go + Play" is on value 111:
+```bash
+sudo defaults write bluetoothaudiod "Apple Bitpool Min" -int 111
+sudo defaults write bluetoothaudiod "Apple Bitpool Max" -int 111
+```
+And I got stable bit rate at 705 kb/s.
 
 ## 🛠 Built With
 
