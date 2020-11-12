@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A351E6CF255D99A0002A62EC /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */; };
+		A351E6D2255D99A0002A62EC /* CustomDocument.applescript in Sources */ = {isa = PBXBuildFile; fileRef = A351E6D1255D99A0002A62EC /* CustomDocument.applescript */; };
+		A351E6D5255D99A0002A62EC /* CustomDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D3255D99A0002A62EC /* CustomDocument.xib */; };
+		A351E6D7255D99A0002A62EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D6255D99A0002A62EC /* Assets.xcassets */; };
+		A351E6DA255D99A0002A62EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D8255D99A0002A62EC /* MainMenu.xib */; };
+		A351E6DD255D99A0002A62EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A351E6DC255D99A0002A62EC /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sbc Bitpool Expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		A351E6D1255D99A0002A62EC /* CustomDocument.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = CustomDocument.applescript; sourceTree = "<group>"; };
+		A351E6D4255D99A0002A62EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CustomDocument.xib; sourceTree = "<group>"; };
+		A351E6D6255D99A0002A62EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A351E6D9255D99A0002A62EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A351E6DB255D99A0002A62EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A351E6DC255D99A0002A62EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A351E6C8255D99A0002A62EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A351E6CF255D99A0002A62EC /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A351E6C2255D99A0002A62EC = {
+			isa = PBXGroup;
+			children = (
+				A351E6D0255D99A0002A62EC /* Sbc Bitpool Expander */,
+				A351E6CD255D99A0002A62EC /* Frameworks */,
+				A351E6CC255D99A0002A62EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A351E6CC255D99A0002A62EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A351E6CD255D99A0002A62EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A351E6D0255D99A0002A62EC /* Sbc Bitpool Expander */ = {
+			isa = PBXGroup;
+			children = (
+				A351E6D1255D99A0002A62EC /* CustomDocument.applescript */,
+				A351E6D3255D99A0002A62EC /* CustomDocument.xib */,
+				A351E6D6255D99A0002A62EC /* Assets.xcassets */,
+				A351E6D8255D99A0002A62EC /* MainMenu.xib */,
+				A351E6DB255D99A0002A62EC /* Info.plist */,
+				A351E6DC255D99A0002A62EC /* main.m */,
+			);
+			path = "Sbc Bitpool Expander";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A351E6CA255D99A0002A62EC /* Sbc Bitpool Expander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A351E6E0255D99A0002A62EC /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */;
+			buildPhases = (
+				A351E6C7255D99A0002A62EC /* Sources */,
+				A351E6C8255D99A0002A62EC /* Frameworks */,
+				A351E6C9255D99A0002A62EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sbc Bitpool Expander";
+			productName = "Sbc Bitpool Expander";
+			productReference = A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A351E6C3255D99A0002A62EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A351E6CA255D99A0002A62EC = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = A351E6C6255D99A0002A62EC /* Build configuration list for PBXProject "sbc-bitpool-expander" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A351E6C2255D99A0002A62EC;
+			productRefGroup = A351E6CC255D99A0002A62EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A351E6CA255D99A0002A62EC /* Sbc Bitpool Expander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A351E6C9255D99A0002A62EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A351E6D7255D99A0002A62EC /* Assets.xcassets in Resources */,
+				A351E6D5255D99A0002A62EC /* CustomDocument.xib in Resources */,
+				A351E6DA255D99A0002A62EC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A351E6C7255D99A0002A62EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A351E6DD255D99A0002A62EC /* main.m in Sources */,
+				A351E6D2255D99A0002A62EC /* CustomDocument.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A351E6D3255D99A0002A62EC /* CustomDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A351E6D4255D99A0002A62EC /* Base */,
+			);
+			name = CustomDocument.xib;
+			sourceTree = "<group>";
+		};
+		A351E6D8255D99A0002A62EC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A351E6D9255D99A0002A62EC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A351E6DE255D99A0002A62EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A351E6DF255D99A0002A62EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A351E6E1255D99A0002A62EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C84A399767;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Sbc Bitpool Expander/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A351E6E2255D99A0002A62EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C84A399767;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Sbc Bitpool Expander/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A351E6C6255D99A0002A62EC /* Build configuration list for PBXProject "sbc-bitpool-expander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A351E6DE255D99A0002A62EC /* Debug */,
+				A351E6DF255D99A0002A62EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A351E6E0255D99A0002A62EC /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A351E6E1255D99A0002A62EC /* Debug */,
+				A351E6E2255D99A0002A62EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A351E6C3255D99A0002A62EC /* Project object */;
+}
