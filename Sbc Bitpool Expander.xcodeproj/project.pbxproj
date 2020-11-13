@@ -7,71 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A351E6CF255D99A0002A62EC /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */; };
-		A351E6D2255D99A0002A62EC /* CustomDocument.applescript in Sources */ = {isa = PBXBuildFile; fileRef = A351E6D1255D99A0002A62EC /* CustomDocument.applescript */; };
-		A351E6D5255D99A0002A62EC /* CustomDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D3255D99A0002A62EC /* CustomDocument.xib */; };
-		A351E6D7255D99A0002A62EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D6255D99A0002A62EC /* Assets.xcassets */; };
-		A351E6DA255D99A0002A62EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A351E6D8255D99A0002A62EC /* MainMenu.xib */; };
-		A351E6DD255D99A0002A62EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A351E6DC255D99A0002A62EC /* main.m */; };
+		A30C7AB0255EC5B50099ABF9 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */; };
+		A30C7AB3255EC5B50099ABF9 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */; };
+		A30C7AB5255EC5B50099ABF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */; };
+		A30C7AB8255EC5B50099ABF9 /* AppXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30C7AB6255EC5B50099ABF9 /* AppXib.xib */; };
+		A30C7ABB255EC5B50099ABF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C7ABA255EC5B50099ABF9 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sbc Bitpool Expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
-		A351E6D1255D99A0002A62EC /* CustomDocument.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = CustomDocument.applescript; sourceTree = "<group>"; };
-		A351E6D4255D99A0002A62EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CustomDocument.xib; sourceTree = "<group>"; };
-		A351E6D6255D99A0002A62EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A351E6D9255D99A0002A62EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		A351E6DB255D99A0002A62EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A351E6DC255D99A0002A62EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sbc Bitpool Expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30C7AB7255EC5B50099ABF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AppXib.xib; sourceTree = "<group>"; };
+		A30C7AB9255EC5B50099ABF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30C7ABA255EC5B50099ABF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A351E6C8255D99A0002A62EC /* Frameworks */ = {
+		A30C7AA9255EC5B50099ABF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A351E6CF255D99A0002A62EC /* AppleScriptObjC.framework in Frameworks */,
+				A30C7AB0255EC5B50099ABF9 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A351E6C2255D99A0002A62EC = {
+		A30C7AA3255EC5B50099ABF9 = {
 			isa = PBXGroup;
 			children = (
-				A351E6D0255D99A0002A62EC /* Sbc Bitpool Expander */,
-				A351E6CD255D99A0002A62EC /* Frameworks */,
-				A351E6CC255D99A0002A62EC /* Products */,
+				A30C7AB1255EC5B50099ABF9 /* Sbc Bitpool Expander */,
+				A30C7AAE255EC5B50099ABF9 /* Frameworks */,
+				A30C7AAD255EC5B50099ABF9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A351E6CC255D99A0002A62EC /* Products */ = {
+		A30C7AAD255EC5B50099ABF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */,
+				A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A351E6CD255D99A0002A62EC /* Frameworks */ = {
+		A30C7AAE255EC5B50099ABF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A351E6CE255D99A0002A62EC /* AppleScriptObjC.framework */,
+				A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A351E6D0255D99A0002A62EC /* Sbc Bitpool Expander */ = {
+		A30C7AB1255EC5B50099ABF9 /* Sbc Bitpool Expander */ = {
 			isa = PBXGroup;
 			children = (
-				A351E6D1255D99A0002A62EC /* CustomDocument.applescript */,
-				A351E6D3255D99A0002A62EC /* CustomDocument.xib */,
-				A351E6D6255D99A0002A62EC /* Assets.xcassets */,
-				A351E6D8255D99A0002A62EC /* MainMenu.xib */,
-				A351E6DB255D99A0002A62EC /* Info.plist */,
-				A351E6DC255D99A0002A62EC /* main.m */,
+				A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */,
+				A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */,
+				A30C7AB6255EC5B50099ABF9 /* AppXib.xib */,
+				A30C7AB9255EC5B50099ABF9 /* Info.plist */,
+				A30C7ABA255EC5B50099ABF9 /* main.m */,
 			);
 			path = "Sbc Bitpool Expander";
 			sourceTree = "<group>";
@@ -79,13 +76,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A351E6CA255D99A0002A62EC /* Sbc Bitpool Expander */ = {
+		A30C7AAB255EC5B50099ABF9 /* Sbc Bitpool Expander */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A351E6E0255D99A0002A62EC /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */;
+			buildConfigurationList = A30C7ABE255EC5B50099ABF9 /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */;
 			buildPhases = (
-				A351E6C7255D99A0002A62EC /* Sources */,
-				A351E6C8255D99A0002A62EC /* Frameworks */,
-				A351E6C9255D99A0002A62EC /* Resources */,
+				A30C7AA8255EC5B50099ABF9 /* Sources */,
+				A30C7AA9255EC5B50099ABF9 /* Frameworks */,
+				A30C7AAA255EC5B50099ABF9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,23 +90,23 @@
 			);
 			name = "Sbc Bitpool Expander";
 			productName = "Sbc Bitpool Expander";
-			productReference = A351E6CB255D99A0002A62EC /* Sbc Bitpool Expander.app */;
+			productReference = A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A351E6C3255D99A0002A62EC /* Project object */ = {
+		A30C7AA4255EC5B50099ABF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					A351E6CA255D99A0002A62EC = {
+					A30C7AAB255EC5B50099ABF9 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
-			buildConfigurationList = A351E6C6255D99A0002A62EC /* Build configuration list for PBXProject "sbc-bitpool-expander" */;
+			buildConfigurationList = A30C7AA7255EC5B50099ABF9 /* Build configuration list for PBXProject "Sbc Bitpool Expander" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,62 +114,53 @@
 				en,
 				Base,
 			);
-			mainGroup = A351E6C2255D99A0002A62EC;
-			productRefGroup = A351E6CC255D99A0002A62EC /* Products */;
+			mainGroup = A30C7AA3255EC5B50099ABF9;
+			productRefGroup = A30C7AAD255EC5B50099ABF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A351E6CA255D99A0002A62EC /* Sbc Bitpool Expander */,
+				A30C7AAB255EC5B50099ABF9 /* Sbc Bitpool Expander */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A351E6C9255D99A0002A62EC /* Resources */ = {
+		A30C7AAA255EC5B50099ABF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A351E6D7255D99A0002A62EC /* Assets.xcassets in Resources */,
-				A351E6D5255D99A0002A62EC /* CustomDocument.xib in Resources */,
-				A351E6DA255D99A0002A62EC /* MainMenu.xib in Resources */,
+				A30C7AB5255EC5B50099ABF9 /* Assets.xcassets in Resources */,
+				A30C7AB8255EC5B50099ABF9 /* AppXib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A351E6C7255D99A0002A62EC /* Sources */ = {
+		A30C7AA8255EC5B50099ABF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A351E6DD255D99A0002A62EC /* main.m in Sources */,
-				A351E6D2255D99A0002A62EC /* CustomDocument.applescript in Sources */,
+				A30C7ABB255EC5B50099ABF9 /* main.m in Sources */,
+				A30C7AB3255EC5B50099ABF9 /* AppDelegate.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A351E6D3255D99A0002A62EC /* CustomDocument.xib */ = {
+		A30C7AB6255EC5B50099ABF9 /* AppXib.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A351E6D4255D99A0002A62EC /* Base */,
+				A30C7AB7255EC5B50099ABF9 /* Base */,
 			);
-			name = CustomDocument.xib;
-			sourceTree = "<group>";
-		};
-		A351E6D8255D99A0002A62EC /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A351E6D9255D99A0002A62EC /* Base */,
-			);
-			name = MainMenu.xib;
+			name = AppXib.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A351E6DE255D99A0002A62EC /* Debug */ = {
+		A30C7ABC255EC5B50099ABF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		A351E6DF255D99A0002A62EC /* Release */ = {
+		A30C7ABD255EC5B50099ABF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,16 +264,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		A351E6E1255D99A0002A62EC /* Debug */ = {
+		A30C7ABF255EC5B50099ABF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -296,16 +285,16 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A351E6E2255D99A0002A62EC /* Release */ = {
+		A30C7AC0255EC5B50099ABF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -316,8 +305,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -326,25 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A351E6C6255D99A0002A62EC /* Build configuration list for PBXProject "sbc-bitpool-expander" */ = {
+		A30C7AA7255EC5B50099ABF9 /* Build configuration list for PBXProject "Sbc Bitpool Expander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A351E6DE255D99A0002A62EC /* Debug */,
-				A351E6DF255D99A0002A62EC /* Release */,
+				A30C7ABC255EC5B50099ABF9 /* Debug */,
+				A30C7ABD255EC5B50099ABF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A351E6E0255D99A0002A62EC /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */ = {
+		A30C7ABE255EC5B50099ABF9 /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A351E6E1255D99A0002A62EC /* Debug */,
-				A351E6E2255D99A0002A62EC /* Release */,
+				A30C7ABF255EC5B50099ABF9 /* Debug */,
+				A30C7AC0255EC5B50099ABF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A351E6C3255D99A0002A62EC /* Project object */;
+	rootObject = A30C7AA4255EC5B50099ABF9 /* Project object */;
 }

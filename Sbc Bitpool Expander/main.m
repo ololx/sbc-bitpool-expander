@@ -2,7 +2,7 @@
 //  main.m
 //  Sbc Bitpool Expander
 //
-//  Created by Alexander A. Kropotin on 12.11.2020.
+//  Created by Alexander A. Kropotin on 13.11.2020.
 //
 
 #import <Cocoa/Cocoa.h>
