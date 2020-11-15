@@ -30,11 +30,11 @@ script AppDelegate
 		return current application's NSTerminateNow
 	end applicationShouldTerminate_
     
-    -- When "OK" button was clicked
-    on buttonClick_(sender)
+    -- When "Ok" button was clicked
+    on okButtonClick_(sender)
         set runnableScript to "sudo defaults write bluetoothaudiod \"Apple Initial Bitpool\" -int " & currentBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Apple Initial Min\" -int " & minBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Apple Bitpool Min\" -int " & minBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Apple Bitpool Max\" -int " & maxBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Negotiated Bitpool\" -int " & currentBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Negotiated Bitpool Min\" -int " & minBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Negotiated Bitpool Max\" -int " & maxBitpoolValue's intValue() & ";" & "sudo defaults write bluetoothaudiod \"Apple channel type\" -string \"Dual Channel\""
         
         do shell script runnableScript with administrator privileges
     end buttonClick_
-	
+    
 end script

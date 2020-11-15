@@ -15,9 +15,9 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="currentBitpoolValue" destination="DK6-EK-ISC" id="KuU-Mk-Myt"/>
-                <outlet property="maxBitpoolValue" destination="Em8-SW-kAm" id="GZr-7X-geJ"/>
-                <outlet property="minBitpoolValue" destination="93x-ep-rzj" id="58E-xF-7od"/>
+                <outlet property="currentBitpoolValue" destination="E9t-ra-xnm" id="Uk5-F9-7MB"/>
+                <outlet property="maxBitpoolValue" destination="T9q-Yp-dMb" id="cT4-mG-kxN"/>
+                <outlet property="minBitpoolValue" destination="yci-wx-35N" id="RWx-Yb-Det"/>
                 <outlet property="theWindow" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -35,8 +35,6 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
@@ -63,69 +61,6 @@
                             <menuItem title="Quit Sbc Bitpool Expander" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                </menuItem>
-                <menuItem title="File" id="dMs-cI-mzQ">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="File" id="bib-Uj-vzu">
-                        <items>
-                            <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                <connections>
-                                    <action selector="newDocument:" target="-1" id="4Si-XN-c54"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
-                                <connections>
-                                    <action selector="openDocument:" target="-1" id="bVn-NM-KNZ"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Open Recent" id="tXI-mr-wws">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
-                                    <items>
-                                        <menuItem title="Clear Menu" id="vNY-rz-j42">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="clearRecentDocuments:" target="-1" id="Daa-9d-B3U"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
-                            <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
-                                <connections>
-                                    <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
-                                <connections>
-                                    <action selector="saveDocument:" target="-1" id="teZ-XB-qJY"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
-                                <connections>
-                                    <action selector="saveDocumentAs:" target="-1" id="mDf-zr-I0C"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Revert to Saved" keyEquivalent="r" id="KaW-ft-85H">
-                                <connections>
-                                    <action selector="revertDocumentToSaved:" target="-1" id="iJ3-Pv-kwq"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
-                            <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
-                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
-                                <connections>
-                                    <action selector="runPageLayout:" target="-1" id="Din-rz-gC5"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
-                                <connections>
-                                    <action selector="print:" target="-1" id="qaZ-4w-aoO"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -687,41 +622,14 @@
         <window title="Sbc Bitpool Expander" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="345" height="245"/>
+            <rect key="contentRect" x="335" y="390" width="345" height="259"/>
             <rect key="screenRect" x="0.0" y="0.0" width="5120" height="2857"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="345" height="245"/>
+                <rect key="frame" x="0.0" y="0.0" width="345" height="259"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="g0s-ex-aCa">
-                        <rect key="frame" x="18" y="188" width="10" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="WY2-Wm-byJ">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wRu-6F-SkM">
-                        <rect key="frame" x="298" y="189" width="29" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="HGo-tm-W1z">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-C8-qmF">
-                        <rect key="frame" x="35" y="187" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="97.031348476890756" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="XOA-3r-feK">
-                            <connections>
-                                <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="kQx-ir-1ud"/>
-                            </connections>
-                        </sliderCell>
-                    </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VRQ-9L-yH8">
-                        <rect key="frame" x="35" y="209" width="100" height="16"/>
+                        <rect key="frame" x="35" y="218" width="100" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="oTW-Ih-gQ0">
                             <font key="font" usesAppearanceFont="YES"/>
@@ -729,35 +637,64 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sne-zb-7B2">
-                        <rect key="frame" x="18" y="130" width="10" height="16"/>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-ra-xnm">
+                        <rect key="frame" x="155" y="218" width="34" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="slr-RF-lf0">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gOu-k6-eHK">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="ZXS-SS-qhG">
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="200"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="e5S-eI-8nC">
+                                <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
+                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="D4h-BI-rfw">
+                        <rect key="frame" x="18" y="183" width="10" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="NGl-9E-wv8">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="s7X-zN-jzz">
-                        <rect key="frame" x="298" y="131" width="29" height="16"/>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-C8-qmF">
+                        <rect key="frame" x="35" y="186" width="259" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="XLw-Rm-TBM">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-dx-8EH">
-                        <rect key="frame" x="35" y="129" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="97.031348476890756" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="AOQ-iP-X0m">
-                            <connections>
-                                <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="kvw-eb-poj"/>
-                            </connections>
-                        </sliderCell>
+                        <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="143.44007681197479" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="XOA-3r-feK"/>
+                        <connections>
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="zF6-DP-9d0">
+                                <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tAU-CQ-NCT">
+                        <rect key="frame" x="298" y="183" width="29" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="0BK-nO-DFI">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VyH-eG-vul">
-                        <rect key="frame" x="35" y="151" width="76" height="16"/>
+                        <rect key="frame" x="35" y="154" width="76" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="zcv-10-M1P">
                             <font key="font" usesAppearanceFont="YES"/>
@@ -765,52 +702,64 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="93x-ep-rzj">
-                        <rect key="frame" x="156" y="151" width="32" height="16"/>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9q-Yp-dMb">
+                        <rect key="frame" x="155" y="155" width="34" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="40" placeholderString="currentBitpoolValue" id="bJ6-me-NWg">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ToG-8d-nIA">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="cFC-B6-gKb">
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="srf-ht-v8U">
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="NU8-Cx-hag">
                                 <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                     <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
                                     <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
                                 </dictionary>
                             </binding>
                         </connections>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O6N-Yq-UkT">
-                        <rect key="frame" x="18" y="69" width="10" height="16"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="68q-cd-qUV">
+                        <rect key="frame" x="18" y="120" width="10" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="bu3-ue-qAJ">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="QJJ-xH-TFN">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="mHW-k2-VWf">
-                        <rect key="frame" x="298" y="70" width="29" height="16"/>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-dx-8EH">
+                        <rect key="frame" x="35" y="123" width="259" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="XXB-YX-HRx">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-WX-ZNP">
-                        <rect key="frame" x="35" y="68" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="97.031348476890756" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="Otx-Go-lMO">
-                            <connections>
-                                <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="Nhh-ka-5EG"/>
-                            </connections>
-                        </sliderCell>
+                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="97.031348476890756" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="AOQ-iP-X0m"/>
+                        <connections>
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="Ani-UE-GyL">
+                                <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Lbh-ZO-88F">
+                        <rect key="frame" x="298" y="120" width="29" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="wrX-Fb-vJC">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="kQM-vZ-KRS">
-                        <rect key="frame" x="35" y="90" width="79" height="16"/>
+                        <rect key="frame" x="35" y="91" width="79" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="dBy-X1-GTS">
                             <font key="font" usesAppearanceFont="YES"/>
@@ -818,25 +767,64 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Em8-SW-kAm">
-                        <rect key="frame" x="156" y="91" width="32" height="16"/>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yci-wx-35N">
+                        <rect key="frame" x="155" y="91" width="34" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="40" placeholderString="currentBitpoolValue" id="YKZ-NK-wsj">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qru-d6-I5b">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="q09-Qa-4GW">
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="200"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="fM3-In-PGJ">
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="Pay-w5-jDe">
                                 <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                     <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
                                     <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
                                 </dictionary>
                             </binding>
                         </connections>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O6N-Yq-UkT">
+                        <rect key="frame" x="18" y="55" width="10" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="bu3-ue-qAJ">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-WX-ZNP">
+                        <rect key="frame" x="35" y="57" width="259" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="97.031348476890756" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="Otx-Go-lMO"/>
+                        <connections>
+                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="LKM-gr-29a">
+                                <dictionary key="options">
+                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                    <bool key="NSConditionallySetsHidden" value="YES"/>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="mHW-k2-VWf">
+                        <rect key="frame" x="298" y="55" width="29" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="XXB-YX-HRx">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <button verticalHuggingPriority="750" id="vbG-eD-uWU">
-                        <rect key="frame" x="131" y="13" width="82" height="32"/>
+                        <rect key="frame" x="131" y="11" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gjb-bO-U1b">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -846,27 +834,75 @@
                             <action selector="buttonClick:" target="Voe-Tx-rLC" id="cXL-IU-8qW"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="DK6-EK-ISC">
-                        <rect key="frame" x="156" y="210" width="32" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="40" placeholderString="currentBitpoolValue" id="0as-RE-BMm">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="HDz-a5-TeD">
-                                <dictionary key="options">
-                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="72.5" y="-177.5"/>
+            <point key="canvasLocation" x="72.5" y="-171.5"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="7NU-yy-gnt"/>
+        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
+            <connections>
+                <action selector="newDocument:" target="-1" id="4Si-XN-c54"/>
+            </connections>
+        </menuItem>
+        <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
+            <connections>
+                <action selector="openDocument:" target="-1" id="bVn-NM-KNZ"/>
+            </connections>
+        </menuItem>
+        <menuItem title="Open Recent" id="tXI-mr-wws">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
+                <items>
+                    <menuItem title="Clear Menu" id="vNY-rz-j42">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <connections>
+                            <action selector="clearRecentDocuments:" target="-1" id="Daa-9d-B3U"/>
+                        </connections>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
+        <menuItem title="File" id="dMs-cI-mzQ">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="File" id="bib-Uj-vzu">
+                <items>
+                    <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                    <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
+                        <connections>
+                            <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
+                        <connections>
+                            <action selector="saveDocument:" target="-1" id="teZ-XB-qJY"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
+                        <connections>
+                            <action selector="saveDocumentAs:" target="-1" id="mDf-zr-I0C"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="Revert to Saved" keyEquivalent="r" id="KaW-ft-85H">
+                        <connections>
+                            <action selector="revertDocumentToSaved:" target="-1" id="iJ3-Pv-kwq"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
+                    <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
+                        <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                        <connections>
+                            <action selector="runPageLayout:" target="-1" id="Din-rz-gC5"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
+                        <connections>
+                            <action selector="print:" target="-1" id="qaZ-4w-aoO"/>
+                        </connections>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
     </objects>
 </document>
