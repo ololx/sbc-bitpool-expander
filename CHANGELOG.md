@@ -8,7 +8,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Added
 
-- UI dialog for the requesting values of minimal Bitpool for the setting it.
+- Other UI elements for the SBC codec settings.
+
+## [2.0.0] - 2020-11-15
+
+### Changed
+
+- The project language and technologies.
+
+### Added
+
+- The window for the bitpool settings of initial, minimal amd maximum size values.
 
 ## [1.0.0] - 2020-04-03
 
