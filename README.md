@@ -2,9 +2,9 @@
 
 This is a simple tool for the sound quality improving of wireless headphones with the sbc codec on a mac.
 
-[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-1.0.0-informational?style=flat-square)](BADGES_GUIDE.md@version) [![build](https://img.shields.io/badge/build-passing-success?style=flat-square)](BADGES_GUIDE.md#build) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-April_03,_2020-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-November_12,_2020-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
+[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-2.0.0-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-November_15,_2020-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-November_15,_2020-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
 
-[![license](https://img.shields.io/badge/license-MIT-informational?style=flat-square)](LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![license](https://img.shields.io/badge/license-MIT-informational?style=flat-square)](LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square)](code_of_conduct.md)
 
 [![platform](https://img.shields.io/badge/platform-macOS_10.14+-important?style=flat-square)](https://en.wikipedia.org/wiki/Computing_platform)
 
@@ -42,7 +42,7 @@ The SBC codec has many different parameters:
 *For instance, Dual Channel mode encodes channels separately, using the entire bitpool for each channel. The forcing device to use Dual Channel instead of Joint Stereo, allos get an almost double bitrate with the same maximum bitpool value: 617 kbps.*
 
 These fixed values, Bitpool and Bitrate, originate from a table with high-quality audio recommended values. But it's just a recommendations.
-![The high-quality audio recommended values](resources/about/high-quality-audio-recommended-values.png)
+![The high-quality audio recommended values](https://github.com/ololx/sbc-bitpool-expander/blob/assets/about/high-quality-audio-recommended-values.png?raw=true)
 
 The Bluetooth stack of macOS have artificial limitations on the maximum value of the bitpool parameter: 
 
@@ -59,9 +59,16 @@ The sbc-bitpool-expander is a mac automator program, which executes a shell comm
 
 ## 📸 Demo
 
-The demonstration shows how the increasing bit rate from 261 kb/s (BEFORE) to 357 kb/s (AFTER) by the bitpool increases after launching this tool.
+### Usage
 
-![The audio graph before usage](resources/demo/before-usage.png){: .callout} ![The audio graph after usage](resources/demo/after-usage.png){: .callout}
+This animation demonstrates how is the simple to use this tool.
+
+![The tool demo](https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/sbc-bitpool-expander-demo.gif?raw=true)
+
+### Effect
+This pictures demonstrates how the increasing bit rate from 261 kb/s (BEFORE) to 357 kb/s (AFTER) by the bitpool increases after launching this tool.
+
+![The audio graph before usage](https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/before-usage.png?raw=true) ![The audio graph after usage](https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/after-usage.png?raw=true)
 
 After launching this tool, the following lines will appear in the bluetoothaudiod macOS settings:
 
@@ -82,7 +89,7 @@ After launching this tool, the following lines will appear in the bluetoothaudio
 
 ## 🎚 Features
 
-- Increase the sbc bluetooth audio bit rate with in one click.
+- Increase the sbc bluetooth audio bit rate with in several click.
 
 ### To Do
 
@@ -101,20 +108,22 @@ These instructions allow to get a copy of this project and run it on a local mac
 Before using it, make sure that follows software are installed on the local machine:
 
 - **[macOS](https://www.apple.com/ru/macos/what-is/)** - the operating system under which the process is executing;
-- **[Automator](https://support.apple.com/guide/automator/welcome/mac)** - the program for operations automation.
 
 If any of the listed programs is not installed, then it can be installed by instruction as described below.
 
 1. #### macOS
     - Install macOS by [this](https://support.apple.com/ht201372) instruction.
 
-2. #### Automator
-
-    - Automator is included on macOS. Just install the macOS.
 
 ### Installing
 
-In order to install it is quite simple to clone or download this repository.
+In order to install it is enough to download executable file `sbc bitpool expander.app` for the required release from this page:
+
+```http
+https://github.com/ololx/sbc-bitpool-expander/releases/
+```
+
+If you want to install the source files it is quite simple to clone or sonload this repository.
 
 ### Cloning
 
@@ -128,13 +137,13 @@ https://github.com/ololx/sbc-bitpool-expander
 
 For use it is required to:
 
-1. Go to the directory with this tool (optionally):
+1. Go to the directory where you download this tool (optionally):
 
    - via Finder;
    - via Terminal prompt; 
 
    ```bash
-   cd /{path to parent dir with this repository}/sbc-bitpoll-expander
+   cd /{path to parent dir with this repository}/
    ```
 
 2. Launch the tool in macOS (optionally):
@@ -145,10 +154,17 @@ For use it is required to:
    ```bash
    open sbc\ bitpool\ expander.app
    ```
+3. Set the required bitpool size values. In general, these will be the following settings:
 
-3. Enter the administrator credentials if necessary
+```
+- Current/Initial bitpool value is 53;
+- Min bitpool value is 53;
+- Max bitpool value is 64;
+```
 
-4. Reconnect a headphones to a local machine via `Bluetooth`
+4. Enter the administrator credentials if necessary
+
+5. Reconnect a headphones to a local machine via `Bluetooth`
 
 ### If you want a better result for your device 
 
@@ -170,7 +186,7 @@ And I got stable bit rate at 705 kb/s.
 
 ## 🛠 Built With
 
-- **[Automator](https://support.apple.com/guide/automator/welcome/mac)** - the program for operations automation.
+- **[Xcode](https://developer.apple.com/xcode/)** - the IDE for the `AppleScriptObjC` automatisation development.
 
 ## 🎉 Contributing
 
