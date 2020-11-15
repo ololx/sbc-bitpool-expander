@@ -13,13 +13,13 @@ script AppDelegate
 	property theWindow : missing value
     
     -- The current/initial bitpool value from slider
-    property currentBitpoolValue : missing value
+    property currentBitpoolValue : 53
     
     -- The min bitpool value from slider
-    property minBitpoolValue : missing value
+    property minBitpoolValue : 53
     
     -- The max bitpool value from slider
-    property maxBitpoolValue : missing value
+    property maxBitpoolValue : 64
 	
 	on applicationWillFinishLaunching_(aNotification)
 		-- Insert code here to initialize your application before any files are opened 
