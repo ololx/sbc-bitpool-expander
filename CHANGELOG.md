@@ -10,6 +10,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [2.1.0] - 2020-11-23
+
+### Added
+
+- The new checkbox for write/delete "Dual Cjannel" mode.
+
+### Changed
+
+- The components organisations - grouped by boxes.
+
 ## [2.0.0] - 2020-11-15
 
 ### Changed
