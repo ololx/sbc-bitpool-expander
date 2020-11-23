@@ -15,9 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="currentBitpoolValue" destination="E9t-ra-xnm" id="Uk5-F9-7MB"/>
-                <outlet property="maxBitpoolValue" destination="T9q-Yp-dMb" id="cT4-mG-kxN"/>
-                <outlet property="minBitpoolValue" destination="yci-wx-35N" id="RWx-Yb-Det"/>
+                <outlet property="currentBitpoolValue" destination="E9t-ra-xnm" id="FBr-k2-0C5"/>
+                <outlet property="dualChannelModeValue" destination="CGD-o4-uGj" id="7aC-a7-fzU"/>
+                <outlet property="maxBitpoolValue" destination="yci-wx-35N" id="P4J-Xd-OI2"/>
+                <outlet property="minBitpoolValue" destination="T9q-Yp-dMb" id="mp1-l3-EhU"/>
                 <outlet property="theWindow" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -622,221 +623,258 @@
         <window title="Sbc Bitpool Expander" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="345" height="259"/>
+            <rect key="contentRect" x="335" y="390" width="387" height="418"/>
             <rect key="screenRect" x="0.0" y="0.0" width="5120" height="2857"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="345" height="259"/>
+                <rect key="frame" x="0.0" y="0.0" width="387" height="418"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VRQ-9L-yH8">
-                        <rect key="frame" x="35" y="218" width="100" height="21"/>
+                    <box fixedFrame="YES" title="Bitpool" translatesAutoresizingMaskIntoConstraints="NO" id="GLA-hC-om9">
+                        <rect key="frame" x="17" y="64" width="353" height="238"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="oTW-Ih-gQ0">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-ra-xnm">
-                        <rect key="frame" x="155" y="218" width="34" height="21"/>
+                        <view key="contentView" id="pDm-XV-apM">
+                            <rect key="frame" x="3" y="3" width="347" height="220"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VRQ-9L-yH8">
+                                    <rect key="frame" x="36" y="179" width="100" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="oTW-Ih-gQ0">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-ra-xnm">
+                                    <rect key="frame" x="156" y="179" width="34" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gOu-k6-eHK">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="ZXS-SS-qhG">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="200"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="e5S-eI-8nC">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="D4h-BI-rfw">
+                                    <rect key="frame" x="19" y="144" width="10" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="NGl-9E-wv8">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-C8-qmF">
+                                    <rect key="frame" x="36" y="147" width="259" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="XOA-3r-feK"/>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="zF6-DP-9d0">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </slider>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tAU-CQ-NCT">
+                                    <rect key="frame" x="299" y="144" width="29" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="0BK-nO-DFI">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VyH-eG-vul">
+                                    <rect key="frame" x="36" y="115" width="76" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="zcv-10-M1P">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9q-Yp-dMb">
+                                    <rect key="frame" x="156" y="116" width="34" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ToG-8d-nIA">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="cFC-B6-gKb">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="100"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="NU8-Cx-hag">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="68q-cd-qUV">
+                                    <rect key="frame" x="19" y="81" width="10" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="QJJ-xH-TFN">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-dx-8EH">
+                                    <rect key="frame" x="36" y="84" width="259" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="AOQ-iP-X0m"/>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="Ani-UE-GyL">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </slider>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Lbh-ZO-88F">
+                                    <rect key="frame" x="299" y="81" width="29" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="wrX-Fb-vJC">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="kQM-vZ-KRS">
+                                    <rect key="frame" x="36" y="52" width="79" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="dBy-X1-GTS">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yci-wx-35N">
+                                    <rect key="frame" x="156" y="52" width="34" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qru-d6-I5b">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="q09-Qa-4GW">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="200"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="Pay-w5-jDe">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O6N-Yq-UkT">
+                                    <rect key="frame" x="19" y="16" width="10" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="bu3-ue-qAJ">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-WX-ZNP">
+                                    <rect key="frame" x="36" y="18" width="259" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="Otx-Go-lMO"/>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="LKM-gr-29a">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </slider>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="mHW-k2-VWf">
+                                    <rect key="frame" x="299" y="16" width="29" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="XXB-YX-HRx">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box fixedFrame="YES" title="Channel" translatesAutoresizingMaskIntoConstraints="NO" id="sNS-Ag-V7v">
+                        <rect key="frame" x="17" y="318" width="353" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gOu-k6-eHK">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="ZXS-SS-qhG">
-                                <real key="minimum" value="0.0"/>
-                                <real key="maximum" value="200"/>
-                            </numberFormatter>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="e5S-eI-8nC">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="D4h-BI-rfw">
-                        <rect key="frame" x="18" y="183" width="10" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="NGl-9E-wv8">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-C8-qmF">
-                        <rect key="frame" x="35" y="186" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="XOA-3r-feK"/>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.currentBitpoolValue" id="zF6-DP-9d0">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </slider>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tAU-CQ-NCT">
-                        <rect key="frame" x="298" y="183" width="29" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="0BK-nO-DFI">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VyH-eG-vul">
-                        <rect key="frame" x="35" y="154" width="76" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="zcv-10-M1P">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9q-Yp-dMb">
-                        <rect key="frame" x="155" y="155" width="34" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ToG-8d-nIA">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="cFC-B6-gKb">
-                                <real key="minimum" value="0.0"/>
-                                <real key="maximum" value="100"/>
-                            </numberFormatter>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="NU8-Cx-hag">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="68q-cd-qUV">
-                        <rect key="frame" x="18" y="120" width="10" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="QJJ-xH-TFN">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-dx-8EH">
-                        <rect key="frame" x="35" y="123" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="AOQ-iP-X0m"/>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.minBitpoolValue" id="Ani-UE-GyL">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </slider>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Lbh-ZO-88F">
-                        <rect key="frame" x="298" y="120" width="29" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="wrX-Fb-vJC">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="kQM-vZ-KRS">
-                        <rect key="frame" x="35" y="91" width="79" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="dBy-X1-GTS">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yci-wx-35N">
-                        <rect key="frame" x="155" y="91" width="34" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qru-d6-I5b">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="q09-Qa-4GW">
-                                <real key="minimum" value="0.0"/>
-                                <real key="maximum" value="200"/>
-                            </numberFormatter>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="Pay-w5-jDe">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O6N-Yq-UkT">
-                        <rect key="frame" x="18" y="55" width="10" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="bu3-ue-qAJ">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-WX-ZNP">
-                        <rect key="frame" x="35" y="57" width="259" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="Otx-Go-lMO"/>
-                        <connections>
-                            <binding destination="7NU-yy-gnt" name="value" keyPath="values.maxBitpoolValue" id="LKM-gr-29a">
-                                <dictionary key="options">
-                                    <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                    <bool key="NSConditionallySetsHidden" value="YES"/>
-                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </slider>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="mHW-k2-VWf">
-                        <rect key="frame" x="298" y="55" width="29" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="XXB-YX-HRx">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
+                        <view key="contentView" id="MZG-1r-quV">
+                            <rect key="frame" x="3" y="3" width="347" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGD-o4-uGj">
+                                    <rect key="frame" x="18" y="26" width="103" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Dual Channel" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NeF-eg-i4B">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <binding destination="7NU-yy-gnt" name="value" keyPath="values.dualChannelModeValue" id="bgK-b2-ve4">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
                     <button verticalHuggingPriority="750" id="vbG-eD-uWU">
-                        <rect key="frame" x="131" y="11" width="82" height="32"/>
+                        <rect key="frame" x="152" y="13" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gjb-bO-U1b">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="buttonClick:" target="Voe-Tx-rLC" id="cXL-IU-8qW"/>
+                            <action selector="okButtonClick:" target="Voe-Tx-rLC" id="Pmu-ca-pBB"/>
                         </connections>
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="72.5" y="-171.5"/>
+            <point key="canvasLocation" x="93.5" y="-92"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="7NU-yy-gnt"/>
         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
