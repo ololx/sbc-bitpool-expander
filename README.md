@@ -2,7 +2,7 @@
 
 This is a simple tool for the sound quality improving of wireless headphones with the sbc codec on a mac.
 
-[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-2.0.0-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-November_23,_2020-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-November_23,_2020-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
+[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-2.2.0-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-November_25,_2020-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-November_25,_2020-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
 
 [![license](https://img.shields.io/badge/license-MIT-informational?style=flat-square)](LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square)](code_of_conduct.md)
 
@@ -13,21 +13,21 @@ This is a simple tool for the sound quality improving of wireless headphones wit
 ## 📇 Table of Contents
 
 - [About](#about)
--   [Demo](#demo)
--   [Features](#feature)
+- [Demo](#demo)
+- [Features](#feature)
 - [Getting Started](#getting-started)
 - [Built With](#built-with)
--   [Contributing](#contributing)
--   [Code of Conduct](#code-of-conduct)
--   [Versioning](#versioning)
--   [Authors](#authors)
--   [Licensing](#licensing)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [Licensing](#licensing)
 
-##  📖 About
+## 📖 About
 
 The sbc-bitpool-expander is a mac automator program, which executes a shell command to change the SBC encoding bitpool values. This changes could up the bitrate value till 357 kbit/s for SBC audio.
 
-### 	Motivation
+### Motivation
 
 The SBC codec has many different parameters:
 
@@ -79,10 +79,10 @@ After launching this tool, the following lines will appear in the bluetoothaudio
     "Apple Bitpool Min" = 53;
     "Apple Initial Bitpool" = 53;
     "Apple Initial Min" = 53;
-    "Apple channel type" = "Dual Channel";
     "Negotiated Bitpool" = 53;
     "Negotiated Bitpool Max" = 64;
     "Negotiated Bitpool Min" = 53;
+    "Apple channel type" = "Dual Channel";
     ...
 }
 ```
