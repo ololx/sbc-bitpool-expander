@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
-## [2.2.0] - 2020-11-23
+## [2.2.0] - 2020-11-25
 
 ### Added
 
