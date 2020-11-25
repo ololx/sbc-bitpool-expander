@@ -46,4 +46,10 @@ script AppDelegate
         do shell script runnableScript with administrator privileges
     end buttonClick_
     
+    -- When "Reset to Defaults" button was clicked
+    on resetButtonClick_(sender)
+        set runnableScript to "sudo defaults delete bluetoothaudiod"
+        do shell script runnableScript with administrator privileges
+    end resetButtonClick_
+    
 end script
