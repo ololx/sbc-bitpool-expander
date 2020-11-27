@@ -688,7 +688,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="452" height="281"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -700,7 +700,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="255.5"/>
+            <point key="canvasLocation" x="75" y="250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -710,54 +710,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="387" height="399"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box title="Channel" id="oeb-X5-93u">
+                            <button verticalHuggingPriority="750" id="qZt-Vx-ZOh">
+                                <rect key="frame" x="291" y="13" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xB3-aD-per">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setBluetoothAudio:" target="XfG-lQ-9wD" id="URz-OG-ldM"/>
+                                </connections>
+                            </button>
+                            <box title="Channel" id="I4s-bz-333">
                                 <rect key="frame" x="17" y="299" width="353" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="4mc-iR-LJ9">
+                                <view key="contentView" id="WJq-qo-r5d">
                                     <rect key="frame" x="3" y="3" width="347" height="62"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-Ol-prg">
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5k-ta-LqO">
                                             <rect key="frame" x="18" y="26" width="103" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Dual Channel" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="UlT-ha-Dwd">
+                                            <buttonCell key="cell" type="check" title="Dual Channel" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LGh-BN-Jhl">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
-                                                <connections>
-                                                    <binding destination="Fkr-1q-ryn" name="value" keyPath="values.dualChannelModeValue" id="TUW-7m-C5o">
-                                                        <dictionary key="options">
-                                                            <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                                            <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                            <bool key="NSValidatesImmediately" value="YES"/>
-                                                        </dictionary>
-                                                    </binding>
-                                                </connections>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="changeDualChannelValue:" target="XfG-lQ-9wD" id="Tlj-V3-a5x"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.dualChannelValue" id="5CJ-yK-bFU">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
                             </box>
-                            <box title="Bitpool" id="adm-hh-Nm4">
+                            <box title="Bitpool" id="Sdi-JM-Rhy">
                                 <rect key="frame" x="17" y="57" width="353" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="OfH-BF-g92">
+                                <view key="contentView" id="f0Y-PU-vzM">
                                     <rect key="frame" x="3" y="3" width="347" height="220"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iOg-At-6Lv">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iXV-sb-g8u">
                                             <rect key="frame" x="36" y="179" width="100" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="hIn-rS-jrM">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="mU1-wy-x9H">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-zb-C4h">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epC-Gu-ihv">
                                             <rect key="frame" x="156" y="179" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="bjk-FT-lIY">
-                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="7fD-am-jX7">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="tdb-bI-XTf">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="wzU-sy-MKF">
                                                     <real key="minimum" value="0.0"/>
                                                     <real key="maximum" value="200"/>
                                                 </numberFormatter>
@@ -766,7 +778,8 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.currentBitpoolValue" id="mCN-Qh-NoO">
+                                                <action selector="changeCurrBitpoolValue:" target="XfG-lQ-9wD" id="yOx-qg-e7g"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.currBitpoolValue" id="6wk-fs-IjD">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsEnabled" value="YES"/>
@@ -777,25 +790,26 @@
                                                 </binding>
                                             </connections>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Q3R-r2-mN6">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tTt-EW-FGg">
                                             <rect key="frame" x="19" y="144" width="10" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="pLK-g2-oVO">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="Skg-dZ-4qG">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-1q-qyB">
+                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-nk-tHd">
                                             <rect key="frame" x="36" y="147" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="5kA-Jk-fjb">
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="17g-gZ-jhN">
                                                 <connections>
-                                                    <accessibilityConnection property="link" destination="ibf-zb-C4h" id="D9r-W8-trA"/>
+                                                    <accessibilityConnection property="link" destination="epC-Gu-ihv" id="2GQ-XT-DdX"/>
                                                 </connections>
                                             </sliderCell>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.currentBitpoolValue" id="k4i-0N-Cgx">
+                                                <action selector="changeCurrBitpoolValue:" target="XfG-lQ-9wD" id="pf3-zi-MnY"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.currBitpoolValue" id="S3c-zZ-IEk">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsHidden" value="YES"/>
@@ -804,29 +818,29 @@
                                                 </binding>
                                             </connections>
                                         </slider>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="hTr-Rh-dXB">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="FsS-Pq-Q4n">
                                             <rect key="frame" x="299" y="144" width="29" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="4Oy-eF-f0b">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="8Iw-Le-6fS">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Y6A-B6-jzG">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="csG-N4-7qm">
                                             <rect key="frame" x="36" y="115" width="76" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="1nh-75-EX8">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="r5f-Df-0zc">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gef-ZD-1ut">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9s8-wA-MGI">
                                             <rect key="frame" x="156" y="116" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="82Z-r6-QPd">
-                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="RXg-6B-Zhh">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Rj4-dc-XhG">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="O6P-Fi-LJz">
                                                     <real key="minimum" value="0.0"/>
                                                     <real key="maximum" value="100"/>
                                                 </numberFormatter>
@@ -835,7 +849,8 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.minBitpoolValue" id="CeH-9u-uNB">
+                                                <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="hhW-hs-AJS"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.minBitpoolValue" id="bVR-eV-ba7">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsEnabled" value="YES"/>
@@ -846,21 +861,22 @@
                                                 </binding>
                                             </connections>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="nX0-Zj-v37">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9rN-bC-vK7">
                                             <rect key="frame" x="19" y="81" width="10" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="BU5-cc-kYT">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="uM7-h1-hm1">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-h9-hkV">
+                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-3L-oF6">
                                             <rect key="frame" x="36" y="84" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="fKe-3f-RCu"/>
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.minBitpoolValue" id="e27-4U-mVd">
+                                                <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="tN0-Dj-rjE"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.minBitpoolValue" id="h6G-aY-cTj">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsHidden" value="YES"/>
@@ -869,29 +885,29 @@
                                                 </binding>
                                             </connections>
                                         </slider>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ICL-PM-JnF">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jm6-9q-hR5">
                                             <rect key="frame" x="299" y="81" width="29" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="M8U-cW-Z7y">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="ToD-sg-J8M">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ZOb-aT-IxC">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="r9l-M9-CRf">
                                             <rect key="frame" x="36" y="52" width="79" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="rnf-kb-ZIu">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="j3j-0N-ZCn">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-ec-cRP">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZW-rj-dBJ">
                                             <rect key="frame" x="156" y="52" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="hfq-bC-rN1">
-                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="UIF-01-uFz">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Iz1-Gh-I0z">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="qjQ-f4-TMl">
                                                     <real key="minimum" value="0.0"/>
                                                     <real key="maximum" value="200"/>
                                                 </numberFormatter>
@@ -900,7 +916,8 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.maxBitpoolValue" id="Vrj-lg-tDI">
+                                                <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="QSS-Hf-iim"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.maxBitpoolValue" id="8dy-0E-lo6">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsEnabled" value="YES"/>
@@ -911,21 +928,22 @@
                                                 </binding>
                                             </connections>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oBi-Xs-OEL">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IYC-ZT-DaE">
                                             <rect key="frame" x="19" y="16" width="10" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="xGp-6o-KJB">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="Q9T-BX-dz8">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-eq-oue">
+                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-hN-9lV">
                                             <rect key="frame" x="36" y="18" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="Tuq-pQ-w7r"/>
+                                            <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
-                                                <binding destination="Fkr-1q-ryn" name="value" keyPath="values.maxBitpoolValue" id="VjL-u7-j5I">
+                                                <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="fWx-9V-AtH"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.maxBitpoolValue" id="HM8-wP-aoE">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsHidden" value="YES"/>
@@ -934,10 +952,10 @@
                                                 </binding>
                                             </connections>
                                         </slider>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="hix-Ld-k5k">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="I9M-lD-yQ7">
                                             <rect key="frame" x="299" y="16" width="29" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="hb9-c2-ZPd">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="tZc-Ot-o7i">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -946,38 +964,24 @@
                                     </subviews>
                                 </view>
                             </box>
-                            <button verticalHuggingPriority="750" id="Kmw-Av-1j7">
-                                <rect key="frame" x="291" y="13" width="82" height="32"/>
+                            <button verticalHuggingPriority="750" id="rDn-1l-lx0">
+                                <rect key="frame" x="155" y="13" width="136" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="308-Kj-bWs">
+                                <buttonCell key="cell" type="push" title="Reset to default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pl1-pM-Dfy">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="set:" target="XfG-lQ-9wD" id="Zo0-eN-pNS"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" id="sz1-Xr-fG3">
-                                <rect key="frame" x="161" y="13" width="136" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Reset to default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wDt-k9-XCL">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="reset:" target="XfG-lQ-9wD" id="Asz-AQ-QQK"/>
+                                    <action selector="resetBluetoothAudio:" target="XfG-lQ-9wD" id="CGE-FH-ZBO"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
-                    <connections>
-                        <outlet property="dualChannel" destination="VdM-Ol-prg" id="XAW-7F-aOW"/>
-                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <userDefaultsController representsSharedInstance="YES" id="Fkr-1q-ryn"/>
+                <userDefaultsController representsSharedInstance="YES" id="dHg-Nj-ixM"/>
             </objects>
-            <point key="canvasLocation" x="62" y="734"/>
+            <point key="canvasLocation" x="75" y="798"/>
         </scene>
     </scenes>
 </document>
