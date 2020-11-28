@@ -802,7 +802,7 @@
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-nk-tHd">
                                             <rect key="frame" x="36" y="147" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="17g-gZ-jhN">
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="17g-gZ-jhN">
                                                 <connections>
                                                     <accessibilityConnection property="link" destination="epC-Gu-ihv" id="2GQ-XT-DdX"/>
                                                 </connections>
@@ -873,7 +873,7 @@
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-3L-oF6">
                                             <rect key="frame" x="36" y="84" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="JMA-V5-8o0"/>
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
                                                 <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="tN0-Dj-rjE"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.minBitpoolValue" id="h6G-aY-cTj">
@@ -940,7 +940,7 @@
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-hN-9lV">
                                             <rect key="frame" x="36" y="18" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="KTi-Dm-59U"/>
+                                            <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
                                                 <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="fWx-9V-AtH"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.maxBitpoolValue" id="HM8-wP-aoE">

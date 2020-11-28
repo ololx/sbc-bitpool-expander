@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [3.0.0] - 2020-11-28
+
+### Changed
+
+- The main project language into `Swift`.
+
 ## [2.2.0] - 2020-11-25
 
 ### Added

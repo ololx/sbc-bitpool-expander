@@ -65,7 +65,7 @@ class ViewController: NSViewController {
                 + "defaults read bluetoothaudiod;"
         );
         
-        print(result)
+        print(result ?? "")
     }
     
     @IBAction func resetBluetoothAudio(_ sender: NSButton) {
