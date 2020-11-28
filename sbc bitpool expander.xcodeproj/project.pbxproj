@@ -7,106 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A30C7AB0255EC5B50099ABF9 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */; };
-		A30C7AB3255EC5B50099ABF9 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */; };
-		A30C7AB5255EC5B50099ABF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */; };
-		A30C7AB8255EC5B50099ABF9 /* AppXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30C7AB6255EC5B50099ABF9 /* AppXib.xib */; };
-		A30C7ABB255EC5B50099ABF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C7ABA255EC5B50099ABF9 /* main.m */; };
+		A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E917F2570BC73000DB3F4 /* AppDelegate.swift */; };
+		A34E91822570BC73000DB3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E91812570BC73000DB3F4 /* ViewController.swift */; };
+		A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */; };
+		A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34E91862570BC74000DB3F4 /* Assets.xcassets */; };
+		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sbc Bitpool Expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
-		A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
-		A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A30C7AB7255EC5B50099ABF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AppXib.xib; sourceTree = "<group>"; };
-		A30C7AB9255EC5B50099ABF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A30C7ABA255EC5B50099ABF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A34E917C2570BC73000DB3F4 /* sbc bitpool expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sbc bitpool expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34E917F2570BC73000DB3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A34E91812570BC73000DB3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A34E91842570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sbc_bitpool_expander.xcdatamodel; sourceTree = "<group>"; };
+		A34E91862570BC74000DB3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A34E91892570BC74000DB3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A34E918B2570BC74000DB3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A30C7AA9255EC5B50099ABF9 /* Frameworks */ = {
+		A34E91792570BC73000DB3F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30C7AB0255EC5B50099ABF9 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A30C7AA3255EC5B50099ABF9 = {
+		A34E91732570BC73000DB3F4 = {
 			isa = PBXGroup;
 			children = (
-				A30C7AB1255EC5B50099ABF9 /* Sbc Bitpool Expander */,
-				A30C7AAE255EC5B50099ABF9 /* Frameworks */,
-				A30C7AAD255EC5B50099ABF9 /* Products */,
+				A34E917E2570BC73000DB3F4 /* sbc bitpool expander */,
+				A34E917D2570BC73000DB3F4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A30C7AAD255EC5B50099ABF9 /* Products */ = {
+		A34E917D2570BC73000DB3F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */,
+				A34E917C2570BC73000DB3F4 /* sbc bitpool expander.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A30C7AAE255EC5B50099ABF9 /* Frameworks */ = {
+		A34E917E2570BC73000DB3F4 /* sbc bitpool expander */ = {
 			isa = PBXGroup;
 			children = (
-				A30C7AAF255EC5B50099ABF9 /* AppleScriptObjC.framework */,
+				A34E917F2570BC73000DB3F4 /* AppDelegate.swift */,
+				A34E91812570BC73000DB3F4 /* ViewController.swift */,
+				A34E91862570BC74000DB3F4 /* Assets.xcassets */,
+				A34E91882570BC74000DB3F4 /* Main.storyboard */,
+				A34E918B2570BC74000DB3F4 /* Info.plist */,
+				A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */,
+				A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A30C7AB1255EC5B50099ABF9 /* Sbc Bitpool Expander */ = {
-			isa = PBXGroup;
-			children = (
-				A30C7AB2255EC5B50099ABF9 /* AppDelegate.applescript */,
-				A30C7AB4255EC5B50099ABF9 /* Assets.xcassets */,
-				A30C7AB6255EC5B50099ABF9 /* AppXib.xib */,
-				A30C7AB9255EC5B50099ABF9 /* Info.plist */,
-				A30C7ABA255EC5B50099ABF9 /* main.m */,
-			);
-			path = "Sbc Bitpool Expander";
+			path = "sbc bitpool expander";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A30C7AAB255EC5B50099ABF9 /* Sbc Bitpool Expander */ = {
+		A34E917B2570BC73000DB3F4 /* sbc bitpool expander */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A30C7ABE255EC5B50099ABF9 /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */;
+			buildConfigurationList = A34E918F2570BC74000DB3F4 /* Build configuration list for PBXNativeTarget "sbc bitpool expander" */;
 			buildPhases = (
-				A30C7AA8255EC5B50099ABF9 /* Sources */,
-				A30C7AA9255EC5B50099ABF9 /* Frameworks */,
-				A30C7AAA255EC5B50099ABF9 /* Resources */,
+				A34E91782570BC73000DB3F4 /* Sources */,
+				A34E91792570BC73000DB3F4 /* Frameworks */,
+				A34E917A2570BC73000DB3F4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Sbc Bitpool Expander";
-			productName = "Sbc Bitpool Expander";
-			productReference = A30C7AAC255EC5B50099ABF9 /* Sbc Bitpool Expander.app */;
+			name = "sbc bitpool expander";
+			productName = "sbc bitpool expander";
+			productReference = A34E917C2570BC73000DB3F4 /* sbc bitpool expander.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A30C7AA4255EC5B50099ABF9 /* Project object */ = {
+		A34E91742570BC73000DB3F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					A30C7AAB255EC5B50099ABF9 = {
-						CreatedOnToolsVersion = 12.1;
+					A34E917B2570BC73000DB3F4 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = A30C7AA7255EC5B50099ABF9 /* Build configuration list for PBXProject "Sbc Bitpool Expander" */;
+			buildConfigurationList = A34E91772570BC73000DB3F4 /* Build configuration list for PBXProject "sbc bitpool expander" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,53 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = A30C7AA3255EC5B50099ABF9;
-			productRefGroup = A30C7AAD255EC5B50099ABF9 /* Products */;
+			mainGroup = A34E91732570BC73000DB3F4;
+			productRefGroup = A34E917D2570BC73000DB3F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A30C7AAB255EC5B50099ABF9 /* Sbc Bitpool Expander */,
+				A34E917B2570BC73000DB3F4 /* sbc bitpool expander */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A30C7AAA255EC5B50099ABF9 /* Resources */ = {
+		A34E917A2570BC73000DB3F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30C7AB5255EC5B50099ABF9 /* Assets.xcassets in Resources */,
-				A30C7AB8255EC5B50099ABF9 /* AppXib.xib in Resources */,
+				A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */,
+				A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A30C7AA8255EC5B50099ABF9 /* Sources */ = {
+		A34E91782570BC73000DB3F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30C7ABB255EC5B50099ABF9 /* main.m in Sources */,
-				A30C7AB3255EC5B50099ABF9 /* AppDelegate.applescript in Sources */,
+				A34E91822570BC73000DB3F4 /* ViewController.swift in Sources */,
+				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
+				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A30C7AB6255EC5B50099ABF9 /* AppXib.xib */ = {
+		A34E91882570BC74000DB3F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A30C7AB7255EC5B50099ABF9 /* Base */,
+				A34E91892570BC74000DB3F4 /* Base */,
 			);
-			name = AppXib.xib;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A30C7ABC255EC5B50099ABF9 /* Debug */ = {
+		A34E918D2570BC74000DB3F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,10 +211,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		A30C7ABD255EC5B50099ABF9 /* Release */ = {
+		A34E918E2570BC74000DB3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,73 +265,90 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		A30C7ABF255EC5B50099ABF9 /* Debug */ = {
+		A34E91902570BC74000DB3F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sbc bitpool expander/sbc_bitpool_expander.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C84A399767;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Sbc Bitpool Expander/Info.plist";
+				INFOPLIST_FILE = "sbc bitpool expander/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		A30C7AC0255EC5B50099ABF9 /* Release */ = {
+		A34E91912570BC74000DB3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sbc bitpool expander/sbc_bitpool_expander.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C84A399767;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Sbc Bitpool Expander/Info.plist";
+				INFOPLIST_FILE = "sbc bitpool expander/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ololx.sbc-bitpool-expander";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A30C7AA7255EC5B50099ABF9 /* Build configuration list for PBXProject "Sbc Bitpool Expander" */ = {
+		A34E91772570BC73000DB3F4 /* Build configuration list for PBXProject "sbc bitpool expander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A30C7ABC255EC5B50099ABF9 /* Debug */,
-				A30C7ABD255EC5B50099ABF9 /* Release */,
+				A34E918D2570BC74000DB3F4 /* Debug */,
+				A34E918E2570BC74000DB3F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A30C7ABE255EC5B50099ABF9 /* Build configuration list for PBXNativeTarget "Sbc Bitpool Expander" */ = {
+		A34E918F2570BC74000DB3F4 /* Build configuration list for PBXNativeTarget "sbc bitpool expander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A30C7ABF255EC5B50099ABF9 /* Debug */,
-				A30C7AC0255EC5B50099ABF9 /* Release */,
+				A34E91902570BC74000DB3F4 /* Debug */,
+				A34E91912570BC74000DB3F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A34E91842570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodel */,
+			);
+			currentVersion = A34E91842570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodel */;
+			path = sbc_bitpool_expander.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = A30C7AA4255EC5B50099ABF9 /* Project object */;
+	rootObject = A34E91742570BC73000DB3F4 /* Project object */;
 }
