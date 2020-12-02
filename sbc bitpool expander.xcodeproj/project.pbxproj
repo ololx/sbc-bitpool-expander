@@ -12,6 +12,8 @@
 		A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */; };
 		A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34E91862570BC74000DB3F4 /* Assets.xcassets */; };
 		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
+		A3D064402577E51200CF800B /* AppDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* AppDefaultsRepository.swift */; };
+		A3E001462577838A00B42B52 /* SbcEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E001452577838A00B42B52 /* SbcEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A34E91892570BC74000DB3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A34E918B2570BC74000DB3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
+		A3D0643F2577E51200CF800B /* AppDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaultsRepository.swift; sourceTree = "<group>"; };
+		A3E001452577838A00B42B52 /* SbcEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				A34E918B2570BC74000DB3F4 /* Info.plist */,
 				A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */,
 				A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */,
+				A3E001452577838A00B42B52 /* SbcEntity.swift */,
+				A3D0643F2577E51200CF800B /* AppDefaultsRepository.swift */,
 			);
 			path = "sbc bitpool expander";
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34E91822570BC73000DB3F4 /* ViewController.swift in Sources */,
+				A3D064402577E51200CF800B /* AppDefaultsRepository.swift in Sources */,
 				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
+				A3E001462577838A00B42B52 /* SbcEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

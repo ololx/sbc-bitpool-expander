@@ -21,15 +21,21 @@ class ViewController: NSViewController {
     //The maximum bitpool value
     var maxBitpoolValue: Int32 = 64
     
+    var defaults: UserDefaults!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.defaults = UserDefaults.init(suiteName: "sbc-bitpool-expander") ?? UserDefaults.init();
+        self.dualChannelValue = Int32(self.defaults.integer(forKey: "dualChannelValue"));
+        self.minBitpoolValue = Int32(self.defaults.integer(forKey: "minBitpoolValue"));
+        self.currBitpoolValue = Int32(self.defaults.integer(forKey: "currBitpoolValue"));
+        self.maxBitpoolValue = Int32(self.defaults.integer(forKey: "maxBitpoolValue"));
     }
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
     
@@ -64,6 +70,11 @@ class ViewController: NSViewController {
                 + dualChannelCommand
                 + "defaults read bluetoothaudiod;"
         );
+        
+        self.defaults.set(self.dualChannelValue, forKey: "dualChannelValue");
+        self.defaults.set(self.currBitpoolValue, forKey: "currBitpoolValue");
+        self.defaults.set(self.minBitpoolValue, forKey: "minBitpoolValue");
+        self.defaults.set(self.maxBitpoolValue, forKey: "maxBitpoolValue");
         
         print(result ?? "")
     }
