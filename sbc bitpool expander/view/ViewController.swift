@@ -23,9 +23,12 @@ class ViewController: NSViewController {
     
     var defaults: UserDefaults!
     
+    var pref: BluetoothAudioPreferences!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.pref = BluetoothAudioDefaults();
         self.defaults = UserDefaults.init(suiteName: "sbc-bitpool-expander") ?? UserDefaults.init();
         self.dualChannelValue = Int32(self.defaults.integer(forKey: "dualChannelValue"));
         self.minBitpoolValue = Int32(self.defaults.integer(forKey: "minBitpoolValue"));
@@ -56,39 +59,19 @@ class ViewController: NSViewController {
     }
     
     @IBAction func setBluetoothAudio(_ sender: NSButton) {
-        let dualChannelCommand = self.dualChannelValue == 1
-            ? "defaults write bluetoothaudiod \\\"Apple channel type\\\" -string \\\"Dual Channel\\\";"
-            : "defaults delete bluetoothaudiod \\\"Apple channel type\\\";";
-        let result = self.execute(
-            "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(self.currBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(self.currBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(self.minBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(self.maxBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(self.currBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(self.minBitpoolValue);"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(self.maxBitpoolValue);"
-                + dualChannelCommand
-                + "defaults read bluetoothaudiod;"
-        );
+        let bitpool: BitpoolDetail = BitpoolDetail.init();
+        let channel: ChannelDetail = ChannelDetail.init(self.dualChannelValue == 1 ? ChannelDetail.Modes.DUAL_CHANNEL : ChannelDetail.Modes.NONE);
+        
+        self.pref.save(bitpool, channel: channel);
         
         self.defaults.set(self.dualChannelValue, forKey: "dualChannelValue");
         self.defaults.set(self.currBitpoolValue, forKey: "currBitpoolValue");
         self.defaults.set(self.minBitpoolValue, forKey: "minBitpoolValue");
         self.defaults.set(self.maxBitpoolValue, forKey: "maxBitpoolValue");
-        
-        print(result ?? "")
     }
     
     @IBAction func resetBluetoothAudio(_ sender: NSButton) {
-        self.execute("defaults delete bluetoothaudiod");
-    }
-    
-    private func execute(_ command: String) -> String? {
-        let script = "do shell script \"\(command)\" with administrator privileges";
-        let executable = NSAppleScript.init(source: script);
-        let output = executable?.executeAndReturnError(nil);
-        
-        return output?.stringValue;
+        self.pref.delete();
     }
 }
 

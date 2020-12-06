@@ -1,24 +1,26 @@
 //
-//  Bitpool.swift
+//  BitpoolDetail.swift
 //  sbc bitpool expander
 //
 //  Created by Alexander A. Kropotin on 02.12.2020.
 //
+import Cocoa
 
-import Foundation
-
-public class BitpoolDetail {
+public class BitpoolDetail: NSObject {
     
     //The current/initial bitpool value
-    private var curr: Int?;
+    var curr: Int!;
     
     //The minimum bitpool value
-    private var min: Int?;
+    var min: Int!;
     
     //The maximum bitpool value
-    private var max: Int?;
+    var max: Int!;
     
-    public init() {
+    override public init() {
+        self.curr = 40;
+        self.min = 2;
+        self.max = 53;
     }
     
     public init(curr: Int, min: Int, max: Int) {

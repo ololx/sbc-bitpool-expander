@@ -4,12 +4,12 @@
 //
 //  Created by Alexander A. Kropotin on 05.12.2020.
 //
+import Cocoa
 
-import Foundation
-
-public class ChannelDetail {
+public class ChannelDetail: NSObject {
     
     public enum Modes {
+        case NONE
         case MONO
         case DUAL_CHANNEL
         case STEREO
@@ -17,10 +17,10 @@ public class ChannelDetail {
     }
     
     //The channel mode value
-    private var mode: Modes?;
+    var mode: Modes!
     
-    public init() {
-        self.mode = Modes.DUAL_CHANNEL;
+    override public init() {
+        self.mode = Modes.NONE;
     }
     
     public init(_ mode: Modes!) {

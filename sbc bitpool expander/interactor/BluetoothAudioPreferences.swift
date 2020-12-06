@@ -7,9 +7,9 @@
 
 import Cocoa
 
-public protocol BluetoothAudioPreference {
+public protocol BluetoothAudioPreferences {
     
-    func save();
+    func save(_ bitpoolDetail: BitpoolDetail!, channel: ChannelDetail!);
     
     func delete();
 }
