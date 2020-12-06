@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A313E7A1257CFD8100C7AC6C /* BluetoothAudioPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreference.swift */; };
 		A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E917F2570BC73000DB3F4 /* AppDelegate.swift */; };
 		A34E91822570BC73000DB3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E91812570BC73000DB3F4 /* ViewController.swift */; };
 		A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAudioPreference.swift; sourceTree = "<group>"; };
 		A34E917C2570BC73000DB3F4 /* sbc bitpool expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sbc bitpool expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34E917F2570BC73000DB3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A34E91812570BC73000DB3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		A368190F257BE69F00438C80 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreference.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */,
 				A34E91822570BC73000DB3F4 /* ViewController.swift in Sources */,
+				A313E7A1257CFD8100C7AC6C /* BluetoothAudioPreference.swift in Sources */,
 				A3D064402577E51200CF800B /* AppDefaultsRepository.swift in Sources */,
 				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
