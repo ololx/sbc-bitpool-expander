@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A313E7A1257CFD8100C7AC6C /* BluetoothAudioPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreferences.swift */; };
+		A313E7A1257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313E7A0257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift */; };
 		A313E7A6257CFFE200C7AC6C /* BluetoothAudioDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313E7A5257CFFE200C7AC6C /* BluetoothAudioDefaults.swift */; };
 		A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E917F2570BC73000DB3F4 /* AppDelegate.swift */; };
-		A34E91822570BC73000DB3F4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E91812570BC73000DB3F4 /* MainController.swift */; };
+		A34E91822570BC73000DB3F4 /* SbcBitpoolExpanderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E91812570BC73000DB3F4 /* SbcBitpoolExpanderViewController.swift */; };
 		A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */; };
 		A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34E91862570BC74000DB3F4 /* Assets.xcassets */; };
 		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
 		A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3681906257BE32700438C80 /* ChannelDetail.swift */; };
-		A3A4BF38257E6AB600F06042 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF37257E6AB600F06042 /* AppConfigurations.swift */; };
-		A3A4BF40257E862F00F06042 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* Configurator.swift */; };
-		A3A4BF45257E86A100F06042 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* MainConfigurator.swift */; };
-		A3D064402577E51200CF800B /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* AppDefaults.swift */; };
+		A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */; };
+		A3A4BF40257E862F00F06042 /* SbcBitpoolExpanderConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* SbcBitpoolExpanderConfiguratorProtocol.swift */; };
+		A3A4BF45257E86A100F06042 /* SbcBitpoolExpanderConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* SbcBitpoolExpanderConfigurator.swift */; };
+		A3A4BF4C257E8C3D00F06042 /* SbcAudioServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF4B257E8C3D00F06042 /* SbcAudioServiceProtocol.swift */; };
+		A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */; };
 		A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E001452577838A00B42B52 /* BitpoolDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAudioPreferences.swift; sourceTree = "<group>"; };
+		A313E7A0257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAudioDefaultsProtocol.swift; sourceTree = "<group>"; };
 		A313E7A5257CFFE200C7AC6C /* BluetoothAudioDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAudioDefaults.swift; sourceTree = "<group>"; };
 		A34E917C2570BC73000DB3F4 /* sbc bitpool expander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sbc bitpool expander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34E917F2570BC73000DB3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A34E91812570BC73000DB3F4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A34E91812570BC73000DB3F4 /* SbcBitpoolExpanderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderViewController.swift; sourceTree = "<group>"; };
 		A34E91842570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sbc_bitpool_expander.xcdatamodel; sourceTree = "<group>"; };
 		A34E91862570BC74000DB3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34E91892570BC74000DB3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A34E918B2570BC74000DB3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
 		A3681906257BE32700438C80 /* ChannelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetail.swift; sourceTree = "<group>"; };
-		A3A4BF37257E6AB600F06042 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
-		A3A4BF3F257E862F00F06042 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
-		A3A4BF44257E86A100F06042 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
-		A3D0643F2577E51200CF800B /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaultsProtocol.swift; sourceTree = "<group>"; };
+		A3A4BF3F257E862F00F06042 /* SbcBitpoolExpanderConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A3A4BF44257E86A100F06042 /* SbcBitpoolExpanderConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderConfigurator.swift; sourceTree = "<group>"; };
+		A3A4BF4B257E8C3D00F06042 /* SbcAudioServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcAudioServiceProtocol.swift; sourceTree = "<group>"; };
+		A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaults.swift; sourceTree = "<group>"; };
 		A3E001452577838A00B42B52 /* BitpoolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitpoolDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +84,6 @@
 			children = (
 				A3A4BF48257E899300F06042 /* configuration */,
 				A313E7AE257D071D00C7AC6C /* entity */,
-				A3681911257BE6B500438C80 /* router */,
 				A3681910257BE6AC00438C80 /* presenter */,
 				A368190F257BE69F00438C80 /* interactor */,
 				A34E917F2570BC73000DB3F4 /* AppDelegate.swift */,
@@ -99,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A34E91882570BC74000DB3F4 /* Main.storyboard */,
-				A34E91812570BC73000DB3F4 /* MainController.swift */,
+				A34E91812570BC73000DB3F4 /* SbcBitpoolExpanderViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -107,10 +108,10 @@
 		A368190F257BE69F00438C80 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				A313E7A0257CFD8100C7AC6C /* BluetoothAudioPreferences.swift */,
+				A313E7A0257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift */,
 				A313E7A5257CFFE200C7AC6C /* BluetoothAudioDefaults.swift */,
-				A3A4BF37257E6AB600F06042 /* AppConfigurations.swift */,
-				A3D0643F2577E51200CF800B /* AppDefaults.swift */,
+				A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */,
+				A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -118,22 +119,16 @@
 		A3681910257BE6AC00438C80 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A3A4BF4B257E8C3D00F06042 /* SbcAudioServiceProtocol.swift */,
 			);
 			path = presenter;
-			sourceTree = "<group>";
-		};
-		A3681911257BE6B500438C80 /* router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = router;
 			sourceTree = "<group>";
 		};
 		A3A4BF48257E899300F06042 /* configuration */ = {
 			isa = PBXGroup;
 			children = (
-				A3A4BF3F257E862F00F06042 /* Configurator.swift */,
-				A3A4BF44257E86A100F06042 /* MainConfigurator.swift */,
+				A3A4BF3F257E862F00F06042 /* SbcBitpoolExpanderConfiguratorProtocol.swift */,
+				A3A4BF44257E86A100F06042 /* SbcBitpoolExpanderConfigurator.swift */,
 			);
 			path = configuration;
 			sourceTree = "<group>";
@@ -208,15 +203,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */,
-				A34E91822570BC73000DB3F4 /* MainController.swift in Sources */,
-				A3A4BF45257E86A100F06042 /* MainConfigurator.swift in Sources */,
-				A313E7A1257CFD8100C7AC6C /* BluetoothAudioPreferences.swift in Sources */,
-				A3D064402577E51200CF800B /* AppDefaults.swift in Sources */,
+				A3A4BF4C257E8C3D00F06042 /* SbcAudioServiceProtocol.swift in Sources */,
+				A34E91822570BC73000DB3F4 /* SbcBitpoolExpanderViewController.swift in Sources */,
+				A3A4BF45257E86A100F06042 /* SbcBitpoolExpanderConfigurator.swift in Sources */,
+				A313E7A1257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift in Sources */,
+				A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */,
 				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
-				A3A4BF40257E862F00F06042 /* Configurator.swift in Sources */,
+				A3A4BF40257E862F00F06042 /* SbcBitpoolExpanderConfiguratorProtocol.swift in Sources */,
 				A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */,
-				A3A4BF38257E6AB600F06042 /* AppConfigurations.swift in Sources */,
+				A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */,
 				A313E7A6257CFFE200C7AC6C /* BluetoothAudioDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

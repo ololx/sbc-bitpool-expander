@@ -7,7 +7,7 @@
 
 import Cocoa
 
-public class BluetoothAudioDefaults: BluetoothAudioPreferences {
+public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
     public func save(_ bitpool: BitpoolDetail!, channel: ChannelDetail!) {
         let dualChannelCommand: String = channel.isPresent()

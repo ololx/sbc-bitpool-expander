@@ -702,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Main Controller-->
+        <!--Sbc Bitpool Expander View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="MainController" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="SbcBitpoolExpanderViewController" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="387" height="399"/>
                         <autoresizingMask key="autoresizingMask"/>

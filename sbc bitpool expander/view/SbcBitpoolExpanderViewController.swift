@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class MainController: NSViewController {
+class SbcBitpoolExpanderViewController: NSViewController {
     
     @IBOutlet weak var channelModeCheckbox: NSBox!
     
@@ -37,16 +37,16 @@ class MainController: NSViewController {
     
     var defaults: UserDefaults!
     
-    var pref: BluetoothAudioPreferences!
+    var pref: BluetoothAudioDefaultsProtocol!
     
-    var conf: AppDefaults!
+    var conf: SbcBitpoolExpanderDefaultsProtocol!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.pref = BluetoothAudioDefaults();
-        self.conf = AppDefaults();
+        self.conf = SbcBitpoolExpanderDefaults();
         
         self.defaults = UserDefaults.init(suiteName: "sbc-bitpool-expander") ?? UserDefaults.init();
         self.dualChannelValue = Int32(self.defaults.integer(forKey: "dualChannelValue"));
