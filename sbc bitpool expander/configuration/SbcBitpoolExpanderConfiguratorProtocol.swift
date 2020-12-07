@@ -5,7 +5,7 @@
 //  Created by Alexander A. Kropotin on 07.12.2020.
 //
 
-import Cocoa
+import Foundation
 
 protocol SbcBitpoolExpanderConfiguratorProtocol: class {
     
