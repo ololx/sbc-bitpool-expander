@@ -4,28 +4,74 @@
 //
 //  Created by Alexander A. Kropotin on 02.12.2020.
 //
-import Cocoa
 
-public class BitpoolDetail: NSObject {
+public struct BitpoolDetail {
+    
+    public class BitpoolDetailBuilder {
+        
+        private var obj: BitpoolDetail!;
+        
+        public init() {
+            self.obj = BitpoolDetail();
+        }
+        
+        public func buid() -> BitpoolDetail {
+            return self.obj;
+        }
+        
+        public func curr(_ curr: Int!) -> BitpoolDetailBuilder {
+            self.obj.curr = curr;
+            
+            return self;
+        }
+        
+        public func min(_ min: Int!) -> BitpoolDetailBuilder {
+            self.obj.min = min;
+            
+            return self;
+        }
+        
+        public func max(_ max: Int!) -> BitpoolDetailBuilder {
+            self.obj.max = max;
+            
+            return self;
+        }
+    }
+    
+    public static func builder() -> BitpoolDetailBuilder {
+        return BitpoolDetailBuilder();
+    }
     
     //The current/initial bitpool value
-    var curr: Int!;
+    private var curr: Int!
     
     //The minimum bitpool value
-    var min: Int!;
+    private var min: Int!
     
     //The maximum bitpool value
-    var max: Int!;
+    private var max: Int!
     
-    override public init() {
+    init() {
         self.curr = 40;
         self.min = 2;
         self.max = 53;
     }
     
-    public init(curr: Int, min: Int, max: Int) {
+    public init(curr: Int!, min: Int!, max: Int!) {
         self.curr = curr;
         self.min = min;
         self.max = max;
+    }
+    
+    public func getCurr() -> Int {
+        return self.curr;
+    }
+    
+    public func getMin() -> Int {
+        return self.min;
+    }
+    
+    public func getMax() -> Int {
+        return self.max;
     }
 }

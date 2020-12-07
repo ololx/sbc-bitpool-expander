@@ -7,24 +7,21 @@
 
 import Cocoa
 
-public class BluetoothAudioDefaults : BluetoothAudioPreferences {
+public class BluetoothAudioDefaults: BluetoothAudioPreferences {
     
-    public func save(_ bitpoolDetail: BitpoolDetail!, channel: ChannelDetail!) {
-        var dualChannelCommand: String = "";
-        if (channel.mode == ChannelDetail.Modes.DUAL_CHANNEL) {
-            dualChannelCommand = "defaults write bluetoothaudiod \\\"Apple channel type\\\" -string \\\"Dual Channel\\\";";
-        } else {
-            dualChannelCommand = "defaults delete bluetoothaudiod \\\"Apple channel type\\\";";
-        }
+    public func save(_ bitpool: BitpoolDetail!, channel: ChannelDetail!) {
+        let dualChannelCommand: String = channel.isPresent()
+            ? "defaults write bluetoothaudiod \\\"Apple channel type\\\" -string \\\"\(channel.getMode())\\\";"
+            : "defaults delete bluetoothaudiod \\\"Apple channel type\\\";";
     
         let result = self.execute(
-            "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(String(describing: bitpoolDetail.curr));"
-                + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(String(describing: bitpoolDetail.min));"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(String(describing: bitpoolDetail.min));"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(String(describing: bitpoolDetail.max));"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(String(describing: bitpoolDetail.curr));"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(String(describing: bitpoolDetail.min));"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(String(describing: bitpoolDetail.max));"
+            "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());"
+                + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());"
+                + "defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(bitpool.getMin());"
+                + "defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(bitpool.getMax());"
+                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());"
+                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());"
+                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());"
                 + dualChannelCommand
                 + "defaults read bluetoothaudiod;"
         );
