@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainController: NSViewController {
     
     @IBOutlet weak var channelModeCheckbox: NSBox!
     
