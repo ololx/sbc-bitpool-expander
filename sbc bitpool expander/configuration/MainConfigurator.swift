@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class MainConfigurator: MainConfiguratorProtocol {
+public class MainConfigurator: Configurator {
     
     func configure(with viewController: MainController) {
         //

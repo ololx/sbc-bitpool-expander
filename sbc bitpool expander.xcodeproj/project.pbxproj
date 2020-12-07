@@ -16,7 +16,7 @@
 		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
 		A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3681906257BE32700438C80 /* ChannelDetail.swift */; };
 		A3A4BF38257E6AB600F06042 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF37257E6AB600F06042 /* AppConfigurations.swift */; };
-		A3A4BF40257E862F00F06042 /* MainConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* MainConfiguratorProtocol.swift */; };
+		A3A4BF40257E862F00F06042 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* Configurator.swift */; };
 		A3A4BF45257E86A100F06042 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* MainConfigurator.swift */; };
 		A3D064402577E51200CF800B /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* AppDefaults.swift */; };
 		A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E001452577838A00B42B52 /* BitpoolDetail.swift */; };
@@ -35,7 +35,7 @@
 		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
 		A3681906257BE32700438C80 /* ChannelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetail.swift; sourceTree = "<group>"; };
 		A3A4BF37257E6AB600F06042 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
-		A3A4BF3F257E862F00F06042 /* MainConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A3A4BF3F257E862F00F06042 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		A3A4BF44257E86A100F06042 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		A3D0643F2577E51200CF800B /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		A3E001452577838A00B42B52 /* BitpoolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitpoolDetail.swift; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 		A34E917E2570BC73000DB3F4 /* sbc bitpool expander */ = {
 			isa = PBXGroup;
 			children = (
+				A3A4BF48257E899300F06042 /* configuration */,
 				A313E7AE257D071D00C7AC6C /* entity */,
 				A3681911257BE6B500438C80 /* router */,
 				A3681910257BE6AC00438C80 /* presenter */,
@@ -90,8 +91,6 @@
 				A34E918B2570BC74000DB3F4 /* Info.plist */,
 				A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */,
 				A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */,
-				A3A4BF3F257E862F00F06042 /* MainConfiguratorProtocol.swift */,
-				A3A4BF44257E86A100F06042 /* MainConfigurator.swift */,
 			);
 			path = "sbc bitpool expander";
 			sourceTree = "<group>";
@@ -128,6 +127,15 @@
 			children = (
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		A3A4BF48257E899300F06042 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A3A4BF3F257E862F00F06042 /* Configurator.swift */,
+				A3A4BF44257E86A100F06042 /* MainConfigurator.swift */,
+			);
+			path = configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +214,7 @@
 				A3D064402577E51200CF800B /* AppDefaults.swift in Sources */,
 				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
-				A3A4BF40257E862F00F06042 /* MainConfiguratorProtocol.swift in Sources */,
+				A3A4BF40257E862F00F06042 /* Configurator.swift in Sources */,
 				A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */,
 				A3A4BF38257E6AB600F06042 /* AppConfigurations.swift in Sources */,
 				A313E7A6257CFFE200C7AC6C /* BluetoothAudioDefaults.swift in Sources */,
