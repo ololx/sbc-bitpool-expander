@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class SbcBitpoolExpanderViewController: NSViewController {
+class SbcView: NSViewController {
     
     @IBOutlet weak var channelModeCheckbox: NSBox!
     
@@ -40,7 +40,6 @@ class SbcBitpoolExpanderViewController: NSViewController {
     var pref: BluetoothAudioDefaultsProtocol!
     
     var conf: SbcBitpoolExpanderDefaultsProtocol!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
