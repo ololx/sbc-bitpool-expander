@@ -51,5 +51,7 @@ public class SbcService: SbcServiceProtocol {
         self.sbcBitpoolExpanderDefaults.setChannnel(channel);
         
         self.bluetoothAudioDefaults.save(bitpool, channel: channel);
+        
+        self.load();
     }
 }
