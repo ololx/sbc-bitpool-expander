@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -701,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Sbc View-->
+        <!--Sbc View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="SbcView" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="SbcViewController" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="387" height="399"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -734,16 +735,6 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
-                                            <connections>
-                                                <action selector="changeDualChannelValue:" target="XfG-lQ-9wD" id="Tlj-V3-a5x"/>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.dualChannelValue" id="5CJ-yK-bFU">
-                                                    <dictionary key="options">
-                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
-                                                        <bool key="NSValidatesImmediately" value="YES"/>
-                                                    </dictionary>
-                                                </binding>
-                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -849,6 +840,15 @@
                                             </textFieldCell>
                                             <connections>
                                                 <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="hhW-hs-AJS"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="mZ9-uL-MBc">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                        <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9rN-bC-vK7">
@@ -866,6 +866,13 @@
                                             <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
                                                 <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="tN0-Dj-rjE"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </slider>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jm6-9q-hR5">
@@ -900,6 +907,15 @@
                                             </textFieldCell>
                                             <connections>
                                                 <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="QSS-Hf-iim"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="uQB-bU-w3U">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                        <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IYC-ZT-DaE">
@@ -917,6 +933,13 @@
                                             <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
                                                 <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="fWx-9V-AtH"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="dDg-xF-Ols">
+                                                    <dictionary key="options">
+                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </slider>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="I9M-lD-yQ7">
@@ -951,7 +974,7 @@
                         <outlet property="bitpoolMaxSlider" destination="KNI-hN-9lV" id="Mdc-iM-2SD"/>
                         <outlet property="bitpoolMinInput" destination="9s8-wA-MGI" id="PEV-8Q-XDs"/>
                         <outlet property="bitpoolMinSlider" destination="9BW-3L-oF6" id="s1t-hp-UrK"/>
-                        <outlet property="channelModeCheckbox" destination="I4s-bz-333" id="ald-6r-TI5"/>
+                        <outlet property="channelModeCheckbox" destination="L5k-ta-LqO" id="2tD-gY-HHp"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -9,36 +9,35 @@ import Foundation
 
 public class SbcService: SbcServiceProtocol {
      
-    weak var sbcView: SbcView!
+    weak var view: SbcViewController!
     
     var bluetoothAudioDefaults: BluetoothAudioDefaults!
     
     var sbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaults!
     
-    init(sbcView: SbcView) {
-        self.sbcView = sbcView;
-        self.sbcBitpoolExpanderDefaults = SbcBitpoolExpanderDefaults.init();
+    init(view: SbcViewController) {
+        self.view = view;
     }
     
     func load() {
         let bitpool: BitpoolDetail = self.sbcBitpoolExpanderDefaults.getBitpool();
-        self.sbcView.bitpoolCurrentInput.intValue = Int32(bitpool.getCurr());
-        self.sbcView.bitpoolMinInput.intValue = Int32(bitpool.getMin());
-        self.sbcView.bitpoolMaxInput.intValue = Int32(bitpool.getMax());
+        self.view.bitpoolCurrentInput.intValue = Int32(bitpool.getCurr());
+        self.view.bitpoolMinInput.intValue = Int32(bitpool.getMin());
+        self.view.bitpoolMaxInput.intValue = Int32(bitpool.getMax());
         
         let channel: ChannelDetail = self.sbcBitpoolExpanderDefaults.getChannnel();
-        self.sbcView.dualChannelValue = channel.getMode() == ChannelDetail.Modes.DUAL_CHANNEL ? 1 : 0;
+        self.view.channelModeCheckbox.intValue = channel.getMode() == ChannelDetail.Modes.DUAL_CHANNEL ? 1 : 0;
     }
     
     func set() {
         let bitpool: BitpoolDetail = BitpoolDetail.builder()
-            .curr(Int(self.sbcView.bitpoolCurrentInput.intValue))
-            .min(Int(self.sbcView.bitpoolMinInput.intValue))
-            .max(Int(self.sbcView.bitpoolMaxInput.intValue))
+            .curr(Int(self.view.bitpoolCurrentInput.intValue))
+            .min(Int(self.view.bitpoolMinInput.intValue))
+            .max(Int(self.view.bitpoolMaxInput.intValue))
             .buid();
         self.sbcBitpoolExpanderDefaults.setBitpool(bitpool);
         
-        let channel: ChannelDetail = ChannelDetail.init(self.sbcView.dualChannelValue == 1 ? ChannelDetail.Modes.DUAL_CHANNEL : ChannelDetail.Modes.NONE);
+        let channel: ChannelDetail = ChannelDetail.init(self.view.channelModeCheckbox.intValue == 1 ? ChannelDetail.Modes.DUAL_CHANNEL : ChannelDetail.Modes.NONE);
         self.sbcBitpoolExpanderDefaults.setChannnel(channel);
         
         self.bluetoothAudioDefaults.save(bitpool, channel: channel);

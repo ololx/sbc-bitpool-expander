@@ -9,6 +9,12 @@ import Cocoa
 
 public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
+    weak var presenter: SbcServiceProtocol!
+    
+    init(presenter: SbcServiceProtocol) {
+        self.presenter = presenter;
+    }
+    
     public func save(_ bitpool: BitpoolDetail!, channel: ChannelDetail!) {
         let dualChannelCommand: String = channel.isPresent()
             ? "defaults write bluetoothaudiod \\\"Apple channel type\\\" -string \\\"\(channel.getMode())\\\";"

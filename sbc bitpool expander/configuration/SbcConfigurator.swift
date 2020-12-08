@@ -7,9 +7,17 @@
 
 import Foundation
 
-public class SbcBitpoolExpanderConfigurator: SbcConfiguratorProtocol {
+public class SbcConfigurator: SbcConfiguratorProtocol {
     
-    func configure(with viewController: SbcView) {
-        //
+    func configure(with viewController: SbcViewController) {
+        //Create components
+        let sbcService = SbcService.init(view: viewController);
+        let bluetoothAudioDefaults = BluetoothAudioDefaults.init(presenter: sbcService);
+        let sbcBitpoolExpanderDefaults = SbcBitpoolExpanderDefaults.init(presenter: sbcService);
+        
+        //Inject components
+        viewController.scbService = sbcService;
+        sbcService.bluetoothAudioDefaults = bluetoothAudioDefaults;
+        sbcService.sbcBitpoolExpanderDefaults = sbcBitpoolExpanderDefaults;
     }
 }

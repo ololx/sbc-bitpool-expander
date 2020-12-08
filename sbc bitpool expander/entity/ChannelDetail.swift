@@ -53,6 +53,10 @@ public struct ChannelDetail {
         return self.mode;
     }
     
+    public func getModeAsString() -> String {
+        return self.mode.rawValue;
+    }
+    
     public func isPresent() -> Bool {
         return self.mode != Modes.NONE;
     }

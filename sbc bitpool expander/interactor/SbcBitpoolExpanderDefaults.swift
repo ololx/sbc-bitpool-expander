@@ -10,8 +10,11 @@ import Foundation
 public class SbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaultsProtocol {
     
     var defaults: UserDefaults!
+
+    weak var presenter: SbcServiceProtocol!
     
-    public init() {
+    init(presenter: SbcServiceProtocol) {
+        self.presenter = presenter;
         self.defaults = UserDefaults.init(suiteName: "sbc-bitpool-expander") ?? UserDefaults.init();
     }
     
@@ -32,7 +35,8 @@ public class SbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaultsProtocol {
     }
     
     public func setChannnel(_ channel: ChannelDetail!) {
-        self.defaults.setValuesForKeys(["mode": channel.getMode()]);
+        print(channel.getMode().rawValue)
+        self.defaults.setValuesForKeys(["mode": channel.getMode().rawValue]);
     }
     
     public func getChannnel() -> ChannelDetail {
