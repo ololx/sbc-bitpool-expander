@@ -16,8 +16,8 @@
 		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
 		A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3681906257BE32700438C80 /* ChannelDetail.swift */; };
 		A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */; };
-		A3A4BF40257E862F00F06042 /* SbcConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* SbcConfiguratorProtocol.swift */; };
-		A3A4BF45257E86A100F06042 /* SbcConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* SbcConfigurator.swift */; };
+		A3A4BF40257E862F00F06042 /* SbcAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* SbcAssemblyProtocol.swift */; };
+		A3A4BF45257E86A100F06042 /* SbcAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* SbcAssembly.swift */; };
 		A3A4BF4C257E8C3D00F06042 /* SbcServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF4B257E8C3D00F06042 /* SbcServiceProtocol.swift */; };
 		A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */; };
 		A3DCA541257E9065005459EE /* SbcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DCA540257E9065005459EE /* SbcService.swift */; };
@@ -37,8 +37,8 @@
 		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
 		A3681906257BE32700438C80 /* ChannelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetail.swift; sourceTree = "<group>"; };
 		A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaultsProtocol.swift; sourceTree = "<group>"; };
-		A3A4BF3F257E862F00F06042 /* SbcConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcConfiguratorProtocol.swift; sourceTree = "<group>"; };
-		A3A4BF44257E86A100F06042 /* SbcConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcConfigurator.swift; sourceTree = "<group>"; };
+		A3A4BF3F257E862F00F06042 /* SbcAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcAssemblyProtocol.swift; sourceTree = "<group>"; };
+		A3A4BF44257E86A100F06042 /* SbcAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcAssembly.swift; sourceTree = "<group>"; };
 		A3A4BF4B257E8C3D00F06042 /* SbcServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcServiceProtocol.swift; sourceTree = "<group>"; };
 		A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaults.swift; sourceTree = "<group>"; };
 		A3DCA540257E9065005459EE /* SbcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcService.swift; sourceTree = "<group>"; };
@@ -84,11 +84,11 @@
 		A34E917E2570BC73000DB3F4 /* sbc bitpool expander */ = {
 			isa = PBXGroup;
 			children = (
-				A3A4BF48257E899300F06042 /* configuration */,
+				A3F044492580F47B009F370F /* assembly */,
+				A3F044482580EFFB009F370F /* route */,
 				A313E7AE257D071D00C7AC6C /* entity */,
 				A3681910257BE6AC00438C80 /* presenter */,
 				A368190F257BE69F00438C80 /* interactor */,
-				A34E917F2570BC73000DB3F4 /* AppDelegate.swift */,
 				A3681903257BDFD000438C80 /* view */,
 				A34E91862570BC74000DB3F4 /* Assets.xcassets */,
 				A34E918B2570BC74000DB3F4 /* Info.plist */,
@@ -127,13 +127,21 @@
 			path = presenter;
 			sourceTree = "<group>";
 		};
-		A3A4BF48257E899300F06042 /* configuration */ = {
+		A3F044482580EFFB009F370F /* route */ = {
 			isa = PBXGroup;
 			children = (
-				A3A4BF3F257E862F00F06042 /* SbcConfiguratorProtocol.swift */,
-				A3A4BF44257E86A100F06042 /* SbcConfigurator.swift */,
+				A34E917F2570BC73000DB3F4 /* AppDelegate.swift */,
 			);
-			path = configuration;
+			path = route;
+			sourceTree = "<group>";
+		};
+		A3F044492580F47B009F370F /* assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A3A4BF3F257E862F00F06042 /* SbcAssemblyProtocol.swift */,
+				A3A4BF44257E86A100F06042 /* SbcAssembly.swift */,
+			);
+			path = assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +217,12 @@
 				A3DCA541257E9065005459EE /* SbcService.swift in Sources */,
 				A3A4BF4C257E8C3D00F06042 /* SbcServiceProtocol.swift in Sources */,
 				A34E91822570BC73000DB3F4 /* SbcViewController.swift in Sources */,
-				A3A4BF45257E86A100F06042 /* SbcConfigurator.swift in Sources */,
+				A3A4BF45257E86A100F06042 /* SbcAssembly.swift in Sources */,
 				A313E7A1257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift in Sources */,
 				A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */,
 				A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */,
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
-				A3A4BF40257E862F00F06042 /* SbcConfiguratorProtocol.swift in Sources */,
+				A3A4BF40257E862F00F06042 /* SbcAssemblyProtocol.swift in Sources */,
 				A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */,
 				A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */,
 				A313E7A6257CFFE200C7AC6C /* BluetoothAudioDefaults.swift in Sources */,

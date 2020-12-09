@@ -35,7 +35,6 @@ public class SbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaultsProtocol {
     }
     
     public func setChannnel(_ channel: ChannelDetail!) {
-        print(channel.getMode().rawValue)
         self.defaults.setValuesForKeys(["mode": channel.getMode().rawValue]);
     }
     

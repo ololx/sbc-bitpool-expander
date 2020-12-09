@@ -768,7 +768,6 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <action selector="changeCurrBitpoolValue:" target="XfG-lQ-9wD" id="yOx-qg-e7g"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolCurrentInput" id="qhK-HV-LKe">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
@@ -798,7 +797,6 @@
                                                 </connections>
                                             </sliderCell>
                                             <connections>
-                                                <action selector="changeCurrBitpoolValue:" target="XfG-lQ-9wD" id="pf3-zi-MnY"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolCurrentInput" id="LPt-Ca-ZzM">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
@@ -839,7 +837,6 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="hhW-hs-AJS"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="mZ9-uL-MBc">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
@@ -865,7 +862,6 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
-                                                <action selector="changeMinBitpoolValue:" target="XfG-lQ-9wD" id="tN0-Dj-rjE"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
@@ -906,8 +902,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="QSS-Hf-iim"/>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="uQB-bU-w3U">
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="clS-eI-VT1">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsEnabled" value="YES"/>
@@ -932,8 +927,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
-                                                <action selector="changeMaxBitpoolValue:" target="XfG-lQ-9wD" id="fWx-9V-AtH"/>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="dDg-xF-Ols">
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="LQq-4K-jBN">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsHidden" value="YES"/>

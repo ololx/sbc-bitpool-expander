@@ -24,7 +24,7 @@ class SbcViewController: NSViewController {
     @IBOutlet weak var bitpoolMaxSlider: NSSlider!
     
     //The view configurator
-    let configurator: SbcConfiguratorProtocol = SbcConfigurator.init();
+    let configurator: SbcAssemblyProtocol = SbcAssembly.init();
     
     //The service instance
     var scbService: SbcService!

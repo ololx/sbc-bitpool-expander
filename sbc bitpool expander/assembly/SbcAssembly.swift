@@ -1,5 +1,5 @@
 //
-//  SbcConfigurator.swift
+//  SbcAssembly.swift
 //  sbc bitpool expander
 //
 //  Created by Alexander A. Kropotin on 07.12.2020.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SbcConfigurator: SbcConfiguratorProtocol {
+public class SbcAssembly: SbcAssemblyProtocol {
     
     func configure(with viewController: SbcViewController) {
         //Create components
