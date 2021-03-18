@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [3.1.1] - 2021-03-18
+
+### Removed
+
+- The checkbox for write/delete "Dual Channel" mode.
+
 ## [3.1.0] - 2020-12-09
 
 ### Added
@@ -32,7 +38,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Added
 
-- The new checkbox for write/delete "Dual Cjannel" mode.
+- The new checkbox for write/delete "Dual Channel" mode.
 
 ### Changed
 
