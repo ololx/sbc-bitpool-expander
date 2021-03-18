@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -707,38 +707,9 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="SbcViewController" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="387" height="399"/>
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="315"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" id="qZt-Vx-ZOh">
-                                <rect key="frame" x="291" y="13" width="82" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xB3-aD-per">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="setBluetoothAudio:" target="XfG-lQ-9wD" id="URz-OG-ldM"/>
-                                </connections>
-                            </button>
-                            <box title="Channel" id="I4s-bz-333">
-                                <rect key="frame" x="17" y="299" width="353" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="WJq-qo-r5d">
-                                    <rect key="frame" x="3" y="3" width="347" height="62"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5k-ta-LqO">
-                                            <rect key="frame" x="18" y="26" width="103" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Dual Channel" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LGh-BN-Jhl">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                    </subviews>
-                                </view>
-                            </box>
                             <box title="Bitpool" id="Sdi-JM-Rhy">
                                 <rect key="frame" x="17" y="57" width="353" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -949,7 +920,7 @@
                                 </view>
                             </box>
                             <button verticalHuggingPriority="750" id="rDn-1l-lx0">
-                                <rect key="frame" x="155" y="13" width="136" height="32"/>
+                                <rect key="frame" x="151" y="13" width="136" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Reset to default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pl1-pM-Dfy">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -957,6 +928,17 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="resetBluetoothAudio:" target="XfG-lQ-9wD" id="CGE-FH-ZBO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="qZt-Vx-ZOh">
+                                <rect key="frame" x="291" y="13" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xB3-aD-per">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setBluetoothAudio:" target="XfG-lQ-9wD" id="URz-OG-ldM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -968,13 +950,12 @@
                         <outlet property="bitpoolMaxSlider" destination="KNI-hN-9lV" id="Mdc-iM-2SD"/>
                         <outlet property="bitpoolMinInput" destination="9s8-wA-MGI" id="PEV-8Q-XDs"/>
                         <outlet property="bitpoolMinSlider" destination="9BW-3L-oF6" id="s1t-hp-UrK"/>
-                        <outlet property="channelModeCheckbox" destination="L5k-ta-LqO" id="2tD-gY-HHp"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="dHg-Nj-ixM"/>
             </objects>
-            <point key="canvasLocation" x="75" y="798"/>
+            <point key="canvasLocation" x="74.5" y="755.5"/>
         </scene>
     </scenes>
 </document>

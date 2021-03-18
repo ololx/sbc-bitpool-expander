@@ -9,7 +9,7 @@ import Cocoa
 
 public protocol BluetoothAudioDefaultsProtocol: class {
     
-    func save(_ bitpool: BitpoolDetail!, channel: ChannelDetail!);
+    func save(_ bitpool: BitpoolDetail!);
     
     func delete();
 }

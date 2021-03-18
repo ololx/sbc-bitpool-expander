@@ -21,10 +21,7 @@ public class SbcService: SbcServiceProtocol {
     
     public func load() {
         let bitpool: BitpoolDetail = self.sbcBitpoolExpanderDefaults.getBitpool();
-        let channel: ChannelDetail = self.sbcBitpoolExpanderDefaults.getChannnel();
-        
         self.updateBitpoolView(bitpool: bitpool);
-        self.updateChannelView(channel: channel);
     }
     
     public func set() {
@@ -33,32 +30,18 @@ public class SbcService: SbcServiceProtocol {
             .min(Int(self.view.bitpoolMinInput.intValue))
             .max(Int(self.view.bitpoolMaxInput.intValue))
             .buid();
-        let channel: ChannelDetail = ChannelDetail.init(self.view.channelModeCheckbox.intValue == 1 ? ChannelDetail.Modes.DUAL_CHANNEL : ChannelDetail.Modes.NONE);
         
         self.sbcBitpoolExpanderDefaults.setBitpool(bitpool);
-        self.sbcBitpoolExpanderDefaults.setChannnel(channel);
-        
-        self.bluetoothAudioDefaults.save(bitpool, channel: channel);
-        
+        self.bluetoothAudioDefaults.save(bitpool);
         self.updateBitpoolView(bitpool: bitpool);
-        self.updateChannelView(channel: channel);
     }
     
     public func reset() {
         let bitpool: BitpoolDetail = BitpoolDetail.init();
-        let channel: ChannelDetail = ChannelDetail.init();
         
         self.sbcBitpoolExpanderDefaults.setBitpool(bitpool);
-        self.sbcBitpoolExpanderDefaults.setChannnel(channel);
-        
-        self.bluetoothAudioDefaults.save(bitpool, channel: channel);
-
+        self.bluetoothAudioDefaults.save(bitpool);
         self.updateBitpoolView(bitpool: bitpool);
-        self.updateChannelView(channel: channel);
-    }
-    
-    private func updateChannelView(channel: ChannelDetail) {
-        self.view.channelModeCheckbox.intValue = channel.getMode() == ChannelDetail.Modes.DUAL_CHANNEL ? 1 : 0;
     }
     
     private func updateBitpoolView(bitpool: BitpoolDetail) {

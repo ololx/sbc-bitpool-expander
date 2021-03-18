@@ -15,11 +15,7 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
         self.presenter = presenter;
     }
     
-    public func save(_ bitpool: BitpoolDetail!, channel: ChannelDetail!) {
-        let dualChannelCommand: String = channel.isPresent()
-            ? "defaults write bluetoothaudiod \\\"Apple channel type\\\" -string \\\"\(channel.getMode())\\\";"
-            : "defaults delete bluetoothaudiod \\\"Apple channel type\\\";";
-    
+    public func save(_ bitpool: BitpoolDetail!) {
         let result = self.execute(
             "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());"
                 + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());"
@@ -28,7 +24,6 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
                 + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());"
                 + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());"
                 + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());"
-                + dualChannelCommand
                 + "defaults read bluetoothaudiod;"
         );
         

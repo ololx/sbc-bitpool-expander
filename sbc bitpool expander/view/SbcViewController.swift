@@ -9,8 +9,6 @@ import Cocoa
 
 class SbcViewController: NSViewController {
     
-    @IBOutlet weak var channelModeCheckbox: NSControl!
-    
     @IBOutlet weak var bitpoolCurrentInput: NSTextField!
     
     @IBOutlet weak var bitpoolCurrentSlider: NSSlider!
