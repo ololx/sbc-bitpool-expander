@@ -24,6 +24,7 @@
 		A3C885862613421F00949305 /* SimpleSequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885852613421F00949305 /* SimpleSequencing.swift */; };
 		A3C885892613426600949305 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885882613426600949305 /* SimpleProcessBuilder.swift */; };
 		A3C8858C2613429400949305 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8858B2613429400949305 /* ProcessBuilder.swift */; };
+		A3C8859326134BB300949305 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = A3C8859226134BB300949305 /* resources */; };
 		A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */; };
 		A3DCA541257E9065005459EE /* SbcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DCA540257E9065005459EE /* SbcService.swift */; };
 		A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E001452577838A00B42B52 /* BitpoolDetail.swift */; };
@@ -50,6 +51,7 @@
 		A3C885852613421F00949305 /* SimpleSequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSequencing.swift; sourceTree = "<group>"; };
 		A3C885882613426600949305 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
 		A3C8858B2613429400949305 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
+		A3C8859226134BB300949305 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = "sbc bitpool expander/resources"; sourceTree = "<group>"; };
 		A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaults.swift; sourceTree = "<group>"; };
 		A3DCA540257E9065005459EE /* SbcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcService.swift; sourceTree = "<group>"; };
 		A3E001452577838A00B42B52 /* BitpoolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitpoolDetail.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		A34E91732570BC73000DB3F4 = {
 			isa = PBXGroup;
 			children = (
+				A3C8859226134BB300949305 /* resources */,
 				A3C8857D2613402800949305 /* commons */,
 				A34E917E2570BC73000DB3F4 /* sbc bitpool expander */,
 				A34E917D2570BC73000DB3F4 /* Products */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */,
+				A3C8859326134BB300949305 /* resources in Resources */,
 				A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

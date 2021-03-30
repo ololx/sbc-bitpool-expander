@@ -38,10 +38,25 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
     
     private func execute(_ command: String) -> String? {
-        let script = "do shell script \"\(command)\" with administrator privileges";
-        let executable = NSAppleScript.init(source: script);
-        let output = executable?.executeAndReturnError(nil);
+        SimpleSequencing.init()
+            .append(
+                some: SimpleProcessBuilder.init(at: "/bin/sh")
+                    .with(with: "-s")
+                    .build()
+            )
+            .append(
+                some: SimpleProcessBuilder.init(at: "/bin/zsh")
+                    .with(with: "-c")
+                    .with(with: command)
+                    .build(),
+                actionType: Action.Method.LAUNCH_AND_WAIT
+            )
+            .execute();
         
-        return output?.stringValue;
+        //let script = "do shell script \"\(command)\" with administrator privileges";
+        //let executable = NSAppleScript.init(source: script);
+        //let output = executable?.executeAndReturnError(nil);
+        
+        return "gut";//output?.stringValue;
     }
 }
