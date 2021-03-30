@@ -22,6 +22,8 @@
 		A3C885802613406100949305 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8857F2613406100949305 /* Action.swift */; };
 		A3C88583261340A200949305 /* Sequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C88582261340A200949305 /* Sequencing.swift */; };
 		A3C885862613421F00949305 /* SimpleSequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885852613421F00949305 /* SimpleSequencing.swift */; };
+		A3C885892613426600949305 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885882613426600949305 /* SimpleProcessBuilder.swift */; };
+		A3C8858C2613429400949305 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8858B2613429400949305 /* ProcessBuilder.swift */; };
 		A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */; };
 		A3DCA541257E9065005459EE /* SbcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DCA540257E9065005459EE /* SbcService.swift */; };
 		A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E001452577838A00B42B52 /* BitpoolDetail.swift */; };
@@ -46,6 +48,8 @@
 		A3C8857F2613406100949305 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A3C88582261340A200949305 /* Sequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencing.swift; sourceTree = "<group>"; };
 		A3C885852613421F00949305 /* SimpleSequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSequencing.swift; sourceTree = "<group>"; };
+		A3C885882613426600949305 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
+		A3C8858B2613429400949305 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
 		A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaults.swift; sourceTree = "<group>"; };
 		A3DCA540257E9065005459EE /* SbcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcService.swift; sourceTree = "<group>"; };
 		A3E001452577838A00B42B52 /* BitpoolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitpoolDetail.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				A3C8857F2613406100949305 /* Action.swift */,
 				A3C88582261340A200949305 /* Sequencing.swift */,
 				A3C885852613421F00949305 /* SimpleSequencing.swift */,
+				A3C885882613426600949305 /* SimpleProcessBuilder.swift */,
+				A3C8858B2613429400949305 /* ProcessBuilder.swift */,
 			);
 			path = process;
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
 				A3A4BF40257E862F00F06042 /* SbcAssemblyProtocol.swift in Sources */,
 				A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */,
+				A3C885892613426600949305 /* SimpleProcessBuilder.swift in Sources */,
+				A3C8858C2613429400949305 /* ProcessBuilder.swift in Sources */,
 				A3C885802613406100949305 /* Action.swift in Sources */,
 				A3C885862613421F00949305 /* SimpleSequencing.swift in Sources */,
 				A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */,
