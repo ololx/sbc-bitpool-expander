@@ -16,28 +16,6 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
-        let result = self.execute(
-            "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());"
-                + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(bitpool.getMax());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());"
-                + "defaults read bluetoothaudiod;"
-        );
-        
-        print(result ?? "")
-    }
-    
-    public func delete() {
-        let result = self.execute("defaults delete bluetoothaudiod; defaults read bluetoothaudiod;");
-        
-        print(result ?? "");
-    }
-    
-    
-    private func execute(_ command: String) -> String? {
         SimpleSequencing.init()
             .append(
                 some: SimpleProcessBuilder.init(at: "/bin/sh")
@@ -45,18 +23,19 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
                     .build()
             )
             .append(
-                some: SimpleProcessBuilder.init(at: "/bin/zsh")
-                    .with(with: "-c")
-                    .with(with: command)
+                some: SimpleProcessBuilder.init(at: "/bin/sh")
+                    .with(with: "./sbc bitpool expander.app/Contents/Resources/resources/sbcbpexp.sh")
+                    .with(with: "-s")
+                    .with(with: ["\(bitpool.getMin())", "\(bitpool.getCurr())", "\(bitpool.getMax())"])
                     .build(),
                 actionType: Action.Method.LAUNCH_AND_WAIT
             )
             .execute();
+    }
+    
+    public func delete() {
+        //let result = self.execute("defaults delete bluetoothaudiod; defaults read bluetoothaudiod;");
         
-        //let script = "do shell script \"\(command)\" with administrator privileges";
-        //let executable = NSAppleScript.init(source: script);
-        //let output = executable?.executeAndReturnError(nil);
-        
-        return "gut";//output?.stringValue;
+        print("");
     }
 }
