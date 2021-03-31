@@ -12,7 +12,7 @@ function set_bitpool {
         local min=$1;
         local max=$2;
         local curr=$3;
-        echo "The new bitpool values are $min - $curr - $max";
+        echo "Set bitpool.\nThe new bitpool values are: \n min bitpool valie is $min\n current bitpool value is $curr\n max bitpool value is $max";
         defaults write bluetoothaudiod "Apple Initial Bitpool" -int $curr;
         defaults write bluetoothaudiod "Apple Initial Min" -int $min;
         defaults write bluetoothaudiod "Apple Bitpool Min" -int $min;
@@ -20,20 +20,27 @@ function set_bitpool {
         defaults write bluetoothaudiod "Negotiated Bitpool" -int $curr;
         defaults write bluetoothaudiod "Negotiated Bitpool Min" -int $min;
         defaults write bluetoothaudiod "Negotiated Bitpool Max" -int $max;
-        defaults read bluetoothaudiod;
+        
+        read_bitpool;
 }
 
 function reset_bitpool {
     echo "Reset bitpool";
     defaults delete bluetoothaudiod;
+    
+    read_bitpool;
+}
+
+function read_bitpool {
+    echo "Reat bitpool";
     defaults read bluetoothaudiod;
 }
 
 function main {
-    while getopts ":s:|:d:" opt; do
+    while getopts ":s:|:d|:r" opt; do
       case $opt in
         s)
-          echo "The create mode";
+          echo "The set mode";
           set_bitpool ${@:2};
           exit
           ;;
@@ -42,6 +49,11 @@ function main {
           reset_bitpool;
           exit
           ;;
+        r)
+          echo "The read mode";
+          read_bitpool;
+          exit
+          ;;  
       esac
     done
 }
