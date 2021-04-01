@@ -32,7 +32,7 @@ function reset_bitpool {
 }
 
 function read_bitpool {
-    echo "Reat bitpool";
+    echo "Reading bitpool";
     defaults read bluetoothaudiod;
 }
 

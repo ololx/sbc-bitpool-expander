@@ -11,8 +11,11 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
     weak var presenter: SbcServiceProtocol!
     
-    init(presenter: SbcServiceProtocol) {
+    private var script: String!
+    
+    init(presenter: SbcServiceProtocol, script: String!) {
         self.presenter = presenter;
+        self.script = script;
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
@@ -24,7 +27,7 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
             )
             .append(
                 some: SimpleProcessBuilder.init(at: "/bin/sh")
-                    .with(with: "./sbc bitpool expander.app/Contents/Resources/resources/sbcbpexp.sh")
+                    .with(with: self.script)
                     .with(with: "-s")
                     .with(with: ["\(bitpool.getMin())", "\(bitpool.getCurr())", "\(bitpool.getMax())"])
                     .build(),
@@ -34,8 +37,19 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     }
     
     public func delete() {
-        //let result = self.execute("defaults delete bluetoothaudiod; defaults read bluetoothaudiod;");
-        
-        print("");
+        SimpleSequencing.init()
+            .append(
+                some: SimpleProcessBuilder.init(at: "/bin/sh")
+                    .with(with: "-s")
+                    .build()
+            )
+            .append(
+                some: SimpleProcessBuilder.init(at: "/bin/sh")
+                    .with(with: self.script)
+                    .with(with: "-r")
+                    .build(),
+                actionType: Action.Method.LAUNCH_AND_WAIT
+            )
+            .execute();
     }
 }
