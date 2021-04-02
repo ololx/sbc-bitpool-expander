@@ -11,37 +11,33 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
     weak var presenter: SbcServiceProtocol!
     
-    init(presenter: SbcServiceProtocol) {
+    private var script: String!
+    
+    init(presenter: SbcServiceProtocol, script: String!) {
         self.presenter = presenter;
+        self.script = script;
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
-        let result = self.execute(
-            "defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());"
-                + "defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(bitpool.getMax());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());"
-                + "defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());"
-                + "defaults read bluetoothaudiod;"
-        );
+        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
+            .with(with: self.script)
+            .with(with: "-s")
+            .with(with: String(describing: bitpool.getMin()))
+            .with(with: String(describing: bitpool.getMax()))
+            .with(with: String(describing: bitpool.getCurr()))
+            .build()
+            .executeAndReturnError(nil);
         
-        print(result ?? "")
+        print(result)
     }
-    
+        
     public func delete() {
-        let result = self.execute("defaults delete bluetoothaudiod; defaults read bluetoothaudiod;");
+        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
+            .with(with: self.script)
+            .with(with: "-d")
+            .build()
+            .executeAndReturnError(nil);
         
-        print(result ?? "");
-    }
-    
-    
-    private func execute(_ command: String) -> String? {
-        let script = "do shell script \"\(command)\" with administrator privileges";
-        let executable = NSAppleScript.init(source: script);
-        let output = executable?.executeAndReturnError(nil);
-        
-        return output?.stringValue;
+        print(result);
     }
 }
