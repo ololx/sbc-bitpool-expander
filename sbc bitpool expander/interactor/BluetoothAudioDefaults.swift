@@ -19,37 +19,23 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
-        SimpleSequencing.init()
-            .append(
-                some: SimpleProcessBuilder.init(at: "/bin/sh")
-                    .with(with: "-s")
-                    .build()
-            )
-            .append(
-                some: SimpleProcessBuilder.init(at: "/bin/sh")
-                    .with(with: self.script)
-                    .with(with: "-s")
-                    .with(with: ["\(bitpool.getMin())", "\(bitpool.getCurr())", "\(bitpool.getMax())"])
-                    .build(),
-                actionType: Action.Method.LAUNCH_AND_WAIT
-            )
-            .execute();
+        let result = self.execute("sh " + self.script + " -s " + "\(bitpool.getMin()) \(bitpool.getMax()) \(bitpool.getCurr())");
+        
+        print(result ?? "")
+    }
+        
+    public func delete() {
+        let result = self.execute(self.script + " -d");
+        
+        print(result ?? "");
     }
     
-    public func delete() {
-        SimpleSequencing.init()
-            .append(
-                some: SimpleProcessBuilder.init(at: "/bin/sh")
-                    .with(with: "-s")
-                    .build()
-            )
-            .append(
-                some: SimpleProcessBuilder.init(at: "/bin/sh")
-                    .with(with: self.script)
-                    .with(with: "-r")
-                    .build(),
-                actionType: Action.Method.LAUNCH_AND_WAIT
-            )
-            .execute();
+    
+    private func execute(_ command: String) -> String? {
+        let script = "do shell script \"\(command)\" with administrator privileges";
+        let executable = NSAppleScript.init(source: script);
+        let output = executable?.executeAndReturnError(nil);
+        
+        return output?.stringValue;
     }
 }
