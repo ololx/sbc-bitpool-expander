@@ -2,7 +2,7 @@
 
 This is a simple tool for the sound quality improving of wireless headphones with the sbc codec on a mac.
 
-[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-3.1.1-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-March_18,_2021-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-March_18,_2021-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
+[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-3.1.2-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/latest_release_date-April_02,_2021-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-April_02,_2021-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
 
 [![license](https://img.shields.io/badge/license-MIT-informational?style=flat-square)](LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square)](code_of_conduct.md)
 
@@ -82,7 +82,6 @@ After launching this tool, the following lines will appear in the bluetoothaudio
     "Negotiated Bitpool" = 53;
     "Negotiated Bitpool Max" = 64;
     "Negotiated Bitpool Min" = 53;
-    "Apple channel type" = "Dual Channel";
     ...
 }
 ```
@@ -123,7 +122,7 @@ In order to install it is enough to download executable file `sbc bitpool expand
 https://github.com/ololx/sbc-bitpool-expander/releases/
 ```
 
-If you want to install the source files it is quite simple to clone or sonload this repository.
+If you want to install the source files it is quite simple to clone or donload this repository.
 
 ### Cloning
 

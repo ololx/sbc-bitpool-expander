@@ -19,23 +19,25 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
-        let result = self.execute("sh " + self.script + " -s " + "\(bitpool.getMin()) \(bitpool.getMax()) \(bitpool.getCurr())");
+        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
+            .with(with: self.script)
+            .with(with: "-s")
+            .with(with: String(describing: bitpool.getMin()))
+            .with(with: String(describing: bitpool.getMax()))
+            .with(with: String(describing: bitpool.getCurr()))
+            .build()
+            .executeAndReturnError(nil);
         
-        print(result ?? "")
+        print(result)
     }
         
     public func delete() {
-        let result = self.execute(self.script + " -d");
+        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
+            .with(with: self.script)
+            .with(with: "-d")
+            .build()
+            .executeAndReturnError(nil);
         
-        print(result ?? "");
-    }
-    
-    
-    private func execute(_ command: String) -> String? {
-        let script = "do shell script \"\(command)\" with administrator privileges";
-        let executable = NSAppleScript.init(source: script);
-        let output = executable?.executeAndReturnError(nil);
-        
-        return output?.stringValue;
+        print(result);
     }
 }

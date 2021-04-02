@@ -1,13 +1,13 @@
 //
-//  Sequencing.swift
+//  AppleScriptShellWrapper.swift
 //  sbc bitpool expander
 //
-//  Created by Alexander A. Kropotin on 30.03.2021.
+//  Created by Alexander A. Kropotin on 02.04.2021.
 //
 
 import Foundation
 
-public protocol Sequencing {
+public protocol AppleScriptShellBuilder {
     
     init();
     

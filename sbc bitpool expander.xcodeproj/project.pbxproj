@@ -14,16 +14,13 @@
 		A34E91852570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E91832570BC73000DB3F4 /* sbc_bitpool_expander.xcdatamodeld */; };
 		A34E91872570BC74000DB3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34E91862570BC74000DB3F4 /* Assets.xcassets */; };
 		A34E918A2570BC74000DB3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E91882570BC74000DB3F4 /* Main.storyboard */; };
+		A35DACC02617254A003364DA /* AppleScriptShellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DACBF2617254A003364DA /* AppleScriptShellBuilder.swift */; };
+		A35DACC6261727E3003364DA /* SimpleAppleScriptShellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DACC5261727E3003364DA /* SimpleAppleScriptShellBuilder.swift */; };
 		A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3681906257BE32700438C80 /* ChannelDetail.swift */; };
 		A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */; };
 		A3A4BF40257E862F00F06042 /* SbcAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF3F257E862F00F06042 /* SbcAssemblyProtocol.swift */; };
 		A3A4BF45257E86A100F06042 /* SbcAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF44257E86A100F06042 /* SbcAssembly.swift */; };
 		A3A4BF4C257E8C3D00F06042 /* SbcServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4BF4B257E8C3D00F06042 /* SbcServiceProtocol.swift */; };
-		A3C885802613406100949305 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8857F2613406100949305 /* Action.swift */; };
-		A3C88583261340A200949305 /* Sequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C88582261340A200949305 /* Sequencing.swift */; };
-		A3C885862613421F00949305 /* SimpleSequencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885852613421F00949305 /* SimpleSequencing.swift */; };
-		A3C885892613426600949305 /* SimpleProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C885882613426600949305 /* SimpleProcessBuilder.swift */; };
-		A3C8858C2613429400949305 /* ProcessBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8858B2613429400949305 /* ProcessBuilder.swift */; };
 		A3C8859326134BB300949305 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = A3C8859226134BB300949305 /* resources */; };
 		A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */; };
 		A3DCA541257E9065005459EE /* SbcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DCA540257E9065005459EE /* SbcService.swift */; };
@@ -41,16 +38,13 @@
 		A34E91892570BC74000DB3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A34E918B2570BC74000DB3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34E918C2570BC74000DB3F4 /* sbc_bitpool_expander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sbc_bitpool_expander.entitlements; sourceTree = "<group>"; };
+		A35DACBF2617254A003364DA /* AppleScriptShellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptShellBuilder.swift; sourceTree = "<group>"; };
+		A35DACC5261727E3003364DA /* SimpleAppleScriptShellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppleScriptShellBuilder.swift; sourceTree = "<group>"; };
 		A3681906257BE32700438C80 /* ChannelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetail.swift; sourceTree = "<group>"; };
 		A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaultsProtocol.swift; sourceTree = "<group>"; };
 		A3A4BF3F257E862F00F06042 /* SbcAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcAssemblyProtocol.swift; sourceTree = "<group>"; };
 		A3A4BF44257E86A100F06042 /* SbcAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcAssembly.swift; sourceTree = "<group>"; };
 		A3A4BF4B257E8C3D00F06042 /* SbcServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcServiceProtocol.swift; sourceTree = "<group>"; };
-		A3C8857F2613406100949305 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		A3C88582261340A200949305 /* Sequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencing.swift; sourceTree = "<group>"; };
-		A3C885852613421F00949305 /* SimpleSequencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSequencing.swift; sourceTree = "<group>"; };
-		A3C885882613426600949305 /* SimpleProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProcessBuilder.swift; sourceTree = "<group>"; };
-		A3C8858B2613429400949305 /* ProcessBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBuilder.swift; sourceTree = "<group>"; };
 		A3C8859226134BB300949305 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = "sbc bitpool expander/resources"; sourceTree = "<group>"; };
 		A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcBitpoolExpanderDefaults.swift; sourceTree = "<group>"; };
 		A3DCA540257E9065005459EE /* SbcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbcService.swift; sourceTree = "<group>"; };
@@ -81,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				A3C8859226134BB300949305 /* resources */,
-				A3C8857D2613402800949305 /* commons */,
 				A34E917E2570BC73000DB3F4 /* sbc bitpool expander */,
 				A34E917D2570BC73000DB3F4 /* Products */,
 			);
@@ -128,6 +121,8 @@
 				A313E7A5257CFFE200C7AC6C /* BluetoothAudioDefaults.swift */,
 				A3A4BF37257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift */,
 				A3D0643F2577E51200CF800B /* SbcBitpoolExpanderDefaults.swift */,
+				A35DACBF2617254A003364DA /* AppleScriptShellBuilder.swift */,
+				A35DACC5261727E3003364DA /* SimpleAppleScriptShellBuilder.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -139,26 +134,6 @@
 				A3DCA540257E9065005459EE /* SbcService.swift */,
 			);
 			path = presenter;
-			sourceTree = "<group>";
-		};
-		A3C8857D2613402800949305 /* commons */ = {
-			isa = PBXGroup;
-			children = (
-				A3C8857E2613403000949305 /* process */,
-			);
-			path = commons;
-			sourceTree = "<group>";
-		};
-		A3C8857E2613403000949305 /* process */ = {
-			isa = PBXGroup;
-			children = (
-				A3C8857F2613406100949305 /* Action.swift */,
-				A3C88582261340A200949305 /* Sequencing.swift */,
-				A3C885852613421F00949305 /* SimpleSequencing.swift */,
-				A3C885882613426600949305 /* SimpleProcessBuilder.swift */,
-				A3C8858B2613429400949305 /* ProcessBuilder.swift */,
-			);
-			path = process;
 			sourceTree = "<group>";
 		};
 		A3F044482580EFFB009F370F /* route */ = {
@@ -251,8 +226,8 @@
 				A3681907257BE32700438C80 /* ChannelDetail.swift in Sources */,
 				A3DCA541257E9065005459EE /* SbcService.swift in Sources */,
 				A3A4BF4C257E8C3D00F06042 /* SbcServiceProtocol.swift in Sources */,
+				A35DACC02617254A003364DA /* AppleScriptShellBuilder.swift in Sources */,
 				A34E91822570BC73000DB3F4 /* SbcViewController.swift in Sources */,
-				A3C88583261340A200949305 /* Sequencing.swift in Sources */,
 				A3A4BF45257E86A100F06042 /* SbcAssembly.swift in Sources */,
 				A313E7A1257CFD8100C7AC6C /* BluetoothAudioDefaultsProtocol.swift in Sources */,
 				A3D064402577E51200CF800B /* SbcBitpoolExpanderDefaults.swift in Sources */,
@@ -260,10 +235,7 @@
 				A34E91802570BC73000DB3F4 /* AppDelegate.swift in Sources */,
 				A3A4BF40257E862F00F06042 /* SbcAssemblyProtocol.swift in Sources */,
 				A3E001462577838A00B42B52 /* BitpoolDetail.swift in Sources */,
-				A3C885892613426600949305 /* SimpleProcessBuilder.swift in Sources */,
-				A3C8858C2613429400949305 /* ProcessBuilder.swift in Sources */,
-				A3C885802613406100949305 /* Action.swift in Sources */,
-				A3C885862613421F00949305 /* SimpleSequencing.swift in Sources */,
+				A35DACC6261727E3003364DA /* SimpleAppleScriptShellBuilder.swift in Sources */,
 				A3A4BF38257E6AB600F06042 /* SbcBitpoolExpanderDefaultsProtocol.swift in Sources */,
 				A313E7A6257CFFE200C7AC6C /* BluetoothAudioDefaults.swift in Sources */,
 			);

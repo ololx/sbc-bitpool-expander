@@ -10,11 +10,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [3.1.2] - 2021-04-02
+
+### Changed
+
+- Add `AppleScriptShellBuilder` for building `do shell script` commands.
+
 ## [3.1.1] - 2021-03-18
 
 ### Removed
 
-- The checkbox for write/delete "Dual Channel" mode.
+- The new checkbox for write/delete "Dual Channel" mode.
 
 ## [3.1.0] - 2020-12-09
 
