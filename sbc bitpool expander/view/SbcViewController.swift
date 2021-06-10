@@ -36,12 +36,6 @@ class SbcViewController: NSViewController {
         //Load initional values from local storage into view
         scbService.load()
     }
-
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
     
     @IBAction func setBluetoothAudio(_ sender: NSButton) {
         self.scbService.set();
