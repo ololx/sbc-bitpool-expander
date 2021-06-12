@@ -9,7 +9,7 @@ import Foundation
 
 public class SbcAssembly: SbcAssemblyProtocol {
     
-    public static var scriptPath: String = "'./sbc bitpool expander.app/Contents/Resources/resources/sbcbpexp.sh'";
+    public static var scriptPath: String = "'\(FileManager.default.currentDirectoryPath)/sbc bitpool expander.app/Contents/Resources/resources/sbcbpexp.sh'";
     
     func configure(with viewController: SbcViewController) {
         //Create components

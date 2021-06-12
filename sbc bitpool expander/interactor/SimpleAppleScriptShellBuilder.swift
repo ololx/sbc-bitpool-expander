@@ -56,7 +56,7 @@ public class SimpleAppleScriptShellBuilder: AppleScriptShellBuilder {
         }
         
         let instance = "do shell script \"\(script!)\" \(self.privileges ? "with administrator privileges" : "")";
-        print(instance);
+        NSLog(instance);
         
         return NSAppleScript.init(source: instance)!;
     }

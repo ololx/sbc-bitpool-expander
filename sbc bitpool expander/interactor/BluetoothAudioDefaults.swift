@@ -5,7 +5,7 @@
 //  Created by Alexander A. Kropotin on 06.12.2020.
 //
 
-import Cocoa
+import Foundation
 
 public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
@@ -19,22 +19,36 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     }
     
     public func save(_ bitpool: BitpoolDetail!) {
-        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
-            .with(with: self.script)
-            .with(with: "-s")
-            .with(with: String(describing: bitpool.getMin()))
-            .with(with: String(describing: bitpool.getMax()))
-            .with(with: String(describing: bitpool.getCurr()))
+        let writeCommand = """
+        echo \\\"Set bitpool.\nThe new bitpool values are: \n min bitpool valie is \(bitpool.getMin())\n current bitpool value is \(bitpool.getCurr))\n max bitpool value is \(bitpool.getMax())\\\";
+        defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());
+        defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());
+        defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(bitpool.getMin());
+        defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(bitpool.getMax());
+        defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());
+        defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());
+        defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());
+        echo \\\"Reading bitpool\\\";
+        defaults read bluetoothaudiod;
+        """;
+        
+        let result = SimpleAppleScriptShellBuilder.init(with: true)
+            .with(with: writeCommand)
             .build()
             .executeAndReturnError(nil);
         
-        print(result)
+        print(result);
     }
         
     public func delete() {
-        let result = SimpleAppleScriptShellBuilder.init(at: "/bin/sh", with: true)
-            .with(with: self.script)
-            .with(with: "-d")
+        let deleteCommand = """
+        echo \\\"Delete bitpool\\\";
+        defaults delete bluetoothaudiod;
+        echo \\\"Reading bitpool\\\";
+        defaults read bluetoothaudiod;
+        """;
+        let result = SimpleAppleScriptShellBuilder.init(with: true)
+            .with(with: deleteCommand)
             .build()
             .executeAndReturnError(nil);
         

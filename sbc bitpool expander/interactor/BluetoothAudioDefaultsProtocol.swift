@@ -5,7 +5,7 @@
 //  Created by Alexander A. Kropotin on 06.12.2020.
 //
 
-import Cocoa
+import Foundation
 
 public protocol BluetoothAudioDefaultsProtocol: class {
     
