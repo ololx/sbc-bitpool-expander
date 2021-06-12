@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -833,6 +834,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
+                                                <accessibilityConnection property="link" destination="9s8-wA-MGI" id="Tin-TL-Mpq"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
@@ -898,6 +900,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
+                                                <accessibilityConnection property="link" destination="uZW-rj-dBJ" id="vEu-I1-e09"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMaxInput" id="LQq-4K-jBN">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>

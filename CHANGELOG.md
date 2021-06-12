@@ -10,6 +10,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [3.1.3] - 2021-06-12
+
+### Fixed
+
+- The deployment version crashes (Mac app works fine while running in Xcode, but deployment version crashes).
+
+### Changed
+
+- The project version.
+- The swift version.
+
 ## [3.1.2] - 2021-04-02
 
 ### Changed
