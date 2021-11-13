@@ -11,10 +11,12 @@
 function set_bitpool {
         local min=$1;
         local max=$2;
-        echo "Set bitpool.\nThe new bitpool values are: \n min bitpool valie is $min\n current bitpool value is $curr\n max bitpool value is $max";
-        defaults write bluetoothaudiod "Apple Initial Min" -int $min;
+        echo "Set bitpool.\nThe new bitpool values are: \n min bitpool valie is $min\n max bitpool value is $max";
         defaults write bluetoothaudiod "Apple Bitpool Min" -int $min;
         defaults write bluetoothaudiod "Apple Bitpool Max" -int $max;
+        defaults write bluetoothaudiod "Apple Initial Bitpool" -int $min;
+        defaults write bluetoothaudiod "Apple Initial Bitpool Min" -int $min;
+        defaults write bluetoothaudiod "Negotiated Bitpool" -int $min;
         defaults write bluetoothaudiod "Negotiated Bitpool Min" -int $min;
         defaults write bluetoothaudiod "Negotiated Bitpool Max" -int $max;
         

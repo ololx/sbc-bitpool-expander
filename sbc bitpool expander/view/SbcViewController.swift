@@ -9,10 +9,6 @@ import Cocoa
 
 class SbcViewController: NSViewController {
     
-    @IBOutlet weak var bitpoolCurrentInput: NSTextField!
-    
-    @IBOutlet weak var bitpoolCurrentSlider: NSSlider!
-    
     @IBOutlet weak var bitpoolMinInput: NSTextField!
     
     @IBOutlet weak var bitpoolMinSlider: NSSlider!

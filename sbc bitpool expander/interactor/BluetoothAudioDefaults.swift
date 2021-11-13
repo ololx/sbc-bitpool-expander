@@ -20,12 +20,12 @@ public class BluetoothAudioDefaults: BluetoothAudioDefaultsProtocol {
     
     public func save(_ bitpool: BitpoolDetail!) {
         let writeCommand = """
-        echo \\\"Set bitpool.\nThe new bitpool values are: \n min bitpool valie is \(bitpool.getMin())\n current bitpool value is \(bitpool.getCurr))\n max bitpool value is \(bitpool.getMax())\\\";
-        defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getCurr());
-        defaults write bluetoothaudiod \\\"Apple Initial Min\\\" -int \(bitpool.getMin());
+        echo \\\"Set bitpool.\nThe new bitpool values are: \n min bitpool valie is \(bitpool.getMin())\n max bitpool value is \(bitpool.getMax())\\\";
         defaults write bluetoothaudiod \\\"Apple Bitpool Min\\\" -int \(bitpool.getMin());
         defaults write bluetoothaudiod \\\"Apple Bitpool Max\\\" -int \(bitpool.getMax());
-        defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getCurr());
+        defaults write bluetoothaudiod \\\"Apple Initial Bitpool\\\" -int \(bitpool.getMin());
+        defaults write bluetoothaudiod \\\"Apple Initial Bitpool Min\\\" -int \(bitpool.getMin());
+        defaults write bluetoothaudiod \\\"Negotiated Bitpool\\\" -int \(bitpool.getMin());
         defaults write bluetoothaudiod \\\"Negotiated Bitpool Min\\\" -int \(bitpool.getMin());
         defaults write bluetoothaudiod \\\"Negotiated Bitpool Max\\\" -int \(bitpool.getMax());
         echo \\\"Reading bitpool\\\";

@@ -26,7 +26,6 @@ public class SbcService: SbcServiceProtocol {
     
     public func set() {
         let bitpool: BitpoolDetail = BitpoolDetail.builder()
-            .curr(Int(self.view.bitpoolCurrentInput.intValue))
             .min(Int(self.view.bitpoolMinInput.intValue))
             .max(Int(self.view.bitpoolMaxInput.intValue))
             .buid();
@@ -45,7 +44,6 @@ public class SbcService: SbcServiceProtocol {
     }
     
     private func updateBitpoolView(bitpool: BitpoolDetail) {
-        self.view.bitpoolCurrentInput.intValue = Int32(bitpool.getCurr());
         self.view.bitpoolMinInput.intValue = Int32(bitpool.getMin());
         self.view.bitpoolMaxInput.intValue = Int32(bitpool.getMax());
     }

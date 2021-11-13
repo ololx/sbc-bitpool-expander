@@ -28,11 +28,17 @@ public class SimpleAppleScriptShellBuilder: AppleScriptShellBuilder {
     
     public required init(at laucnhPath: String!, with privileges: Bool!) {
         self.at(at: laucnhPath);
-        self.privileges = privileges;
+        self.privileges(privileges);
     }
     
     public func at(at laucnhPath: String!) -> AppleScriptShellBuilder {
         self.launchPath = laucnhPath;
+        
+        return self;
+    }
+    
+    public func privileges(_ privileges: Bool!) -> AppleScriptShellBuilder {
+        self.privileges = privileges;
         
         return self;
     }
