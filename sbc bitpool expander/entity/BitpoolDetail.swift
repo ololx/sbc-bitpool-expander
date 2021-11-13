@@ -19,12 +19,6 @@ public struct BitpoolDetail {
             return self.obj;
         }
         
-        public func curr(_ curr: Int!) -> BitpoolDetailBuilder {
-            self.obj.curr = curr;
-            
-            return self;
-        }
-        
         public func min(_ min: Int!) -> BitpoolDetailBuilder {
             self.obj.min = min;
             
@@ -42,9 +36,6 @@ public struct BitpoolDetail {
         return BitpoolDetailBuilder();
     }
     
-    //The current/initial bitpool value
-    private var curr: Int!
-    
     //The minimum bitpool value
     private var min: Int!
     
@@ -52,19 +43,13 @@ public struct BitpoolDetail {
     private var max: Int!
     
     init() {
-        self.curr = 40;
         self.min = 2;
         self.max = 53;
     }
     
     public init(curr: Int!, min: Int!, max: Int!) {
-        self.curr = curr;
         self.min = min;
         self.max = max;
-    }
-    
-    public func getCurr() -> Int {
-        return self.curr;
     }
     
     public func getMin() -> Int {

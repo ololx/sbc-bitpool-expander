@@ -20,7 +20,6 @@ public class SbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaultsProtocol {
     
     public func setBitpool(_ bitpool: BitpoolDetail!) {
         self.defaults.setValuesForKeys([
-            "curr": bitpool.getCurr(),
             "min": bitpool.getMin(),
             "max": bitpool.getMax(),
         ]);
@@ -28,7 +27,6 @@ public class SbcBitpoolExpanderDefaults: SbcBitpoolExpanderDefaultsProtocol {
     
     public func getBitpool() -> BitpoolDetail {
         return BitpoolDetail.builder()
-            .curr(self.defaults.integer(forKey: "curr"))
             .min(self.defaults.integer(forKey: "min"))
             .max(self.defaults.integer(forKey: "max"))
             .buid();

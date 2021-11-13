@@ -708,68 +708,23 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="SbcViewController" customModule="sbc_bitpool_expander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="387" height="315"/>
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="261"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box title="Bitpool" id="Sdi-JM-Rhy">
-                                <rect key="frame" x="17" y="57" width="353" height="238"/>
+                                <rect key="frame" x="17" y="57" width="353" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="f0Y-PU-vzM">
-                                    <rect key="frame" x="3" y="3" width="347" height="220"/>
+                                    <rect key="frame" x="3" y="3" width="347" height="166"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iXV-sb-g8u">
-                                            <rect key="frame" x="36" y="179" width="100" height="21"/>
+                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-3L-oF6">
+                                            <rect key="frame" x="35" y="93" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Current bitpool:" id="mU1-wy-x9H">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epC-Gu-ihv">
-                                            <rect key="frame" x="156" y="179" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="tdb-bI-XTf">
-                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="wzU-sy-MKF">
-                                                    <real key="minimum" value="0.0"/>
-                                                    <real key="maximum" value="200"/>
-                                                </numberFormatter>
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolCurrentInput" id="qhK-HV-LKe">
-                                                    <dictionary key="options">
-                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                                        <bool key="NSConditionallySetsEnabled" value="YES"/>
-                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
-                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                                        <bool key="NSValidatesImmediately" value="YES"/>
-                                                    </dictionary>
-                                                </binding>
-                                            </connections>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tTt-EW-FGg">
-                                            <rect key="frame" x="19" y="144" width="10" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="Skg-dZ-4qG">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-nk-tHd">
-                                            <rect key="frame" x="36" y="147" width="259" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="17g-gZ-jhN">
-                                                <connections>
-                                                    <accessibilityConnection property="link" destination="epC-Gu-ihv" id="2GQ-XT-DdX"/>
-                                                </connections>
-                                            </sliderCell>
-                                            <connections>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolCurrentInput" id="LPt-Ca-ZzM">
+                                                <accessibilityConnection property="link" destination="9s8-wA-MGI" id="Tin-TL-Mpq"/>
+                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
                                                     <dictionary key="options">
                                                         <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
                                                         <bool key="NSConditionallySetsHidden" value="YES"/>
@@ -778,26 +733,17 @@
                                                 </binding>
                                             </connections>
                                         </slider>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="FsS-Pq-Q4n">
-                                            <rect key="frame" x="299" y="144" width="29" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="8Iw-Le-6fS">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="csG-N4-7qm">
-                                            <rect key="frame" x="36" y="115" width="76" height="21"/>
+                                            <rect key="frame" x="36" y="121" width="114" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Min bitpool:" id="r5f-Df-0zc">
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Min/Initial bitpool:" id="r5f-Df-0zc">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9s8-wA-MGI">
-                                            <rect key="frame" x="156" y="116" width="34" height="21"/>
+                                            <rect key="frame" x="156" y="122" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Rj4-dc-XhG">
                                                 <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="O6P-Fi-LJz">
@@ -821,7 +767,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9rN-bC-vK7">
-                                            <rect key="frame" x="19" y="81" width="10" height="21"/>
+                                            <rect key="frame" x="19" y="87" width="10" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="uM7-h1-hm1">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -829,23 +775,8 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-3L-oF6">
-                                            <rect key="frame" x="36" y="84" width="259" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
-                                            <connections>
-                                                <accessibilityConnection property="link" destination="9s8-wA-MGI" id="Tin-TL-Mpq"/>
-                                                <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
-                                                    <dictionary key="options">
-                                                        <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
-                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
-                                                        <bool key="NSValidatesImmediately" value="YES"/>
-                                                    </dictionary>
-                                                </binding>
-                                            </connections>
-                                        </slider>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jm6-9q-hR5">
-                                            <rect key="frame" x="299" y="81" width="29" height="21"/>
+                                            <rect key="frame" x="299" y="87" width="29" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="ToD-sg-J8M">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -854,7 +785,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="r9l-M9-CRf">
-                                            <rect key="frame" x="36" y="52" width="79" height="21"/>
+                                            <rect key="frame" x="36" y="60" width="79" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Max bitpool:" id="j3j-0N-ZCn">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -863,7 +794,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZW-rj-dBJ">
-                                            <rect key="frame" x="156" y="52" width="34" height="21"/>
+                                            <rect key="frame" x="156" y="58" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Iz1-Gh-I0z">
                                                 <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="qjQ-f4-TMl">
@@ -887,7 +818,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IYC-ZT-DaE">
-                                            <rect key="frame" x="19" y="16" width="10" height="21"/>
+                                            <rect key="frame" x="19" y="24" width="10" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="1" id="Q9T-BX-dz8">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -896,7 +827,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-hN-9lV">
-                                            <rect key="frame" x="36" y="18" width="259" height="24"/>
+                                            <rect key="frame" x="36" y="24" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" alignment="left" minValue="1" maxValue="200" doubleValue="64" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="KTi-Dm-59U"/>
                                             <connections>
@@ -911,7 +842,7 @@
                                             </connections>
                                         </slider>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="I9M-lD-yQ7">
-                                            <rect key="frame" x="299" y="16" width="29" height="21"/>
+                                            <rect key="frame" x="299" y="22" width="29" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="200" id="tZc-Ot-o7i">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -947,8 +878,6 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="bitpoolCurrentInput" destination="epC-Gu-ihv" id="lLD-f1-7k5"/>
-                        <outlet property="bitpoolCurrentSlider" destination="XMa-nk-tHd" id="vrq-41-MbW"/>
                         <outlet property="bitpoolMaxInput" destination="uZW-rj-dBJ" id="gAO-kn-3pf"/>
                         <outlet property="bitpoolMaxSlider" destination="KNI-hN-9lV" id="Mdc-iM-2SD"/>
                         <outlet property="bitpoolMinInput" destination="9s8-wA-MGI" id="PEV-8Q-XDs"/>
@@ -958,7 +887,7 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="dHg-Nj-ixM"/>
             </objects>
-            <point key="canvasLocation" x="74.5" y="755.5"/>
+            <point key="canvasLocation" x="74.5" y="728.5"/>
         </scene>
     </scenes>
 </document>

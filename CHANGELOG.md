@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [4.0.0] - 2021-11-13
+
+### Removed
+
+- The deprecated param- `current bitpool`.
+
 ## [3.1.3] - 2021-06-12
 
 ### Fixed
