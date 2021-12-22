@@ -1,12 +1,18 @@
+<div align="right">
+  <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/> <img src="https://img.shields.io/github/stars/ololx/sbc-bitpool-expander?style=social" alt="stars"/> <img src="https://img.shields.io/github/forks/ololx/sbc-bitpool-expander?style=social" alt="forks"/> <img src="https://img.shields.io/github/watchers/ololx/sbc-bitpool-expander?style=social" alt="social"/>
+</div> 
+
 # sbc-bitpool-expander
 
 This is a simple tool for the sound quality improving of wireless headphones with the sbc codec on a mac.
 
-[![status](https://img.shields.io/badge/status-frozen-inactive?style=flat-square)](BADGES_GUIDE.md#status) [![version](https://img.shields.io/badge/version-4.0.0-informational?style=flat-square)](BADGES_GUIDE.md@version) [![oss lifecycle](https://img.shields.io/badge/oss_lifecycle-maintenance-important?style=flat-square)](BADGES_GUIDE.md#oss-lifecycle) [![maintenance](https://img.shields.io/badge/maintenance-yes-informational?style=flat-square)](BADGES_GUIDE.md#maintenance)  [![latest release date](https://img.shields.io/badge/last_release-November_13,_2021-informational?style=flat-square)](BADGES_GUIDE.md#release-date) [![last commit](https://img.shields.io/badge/last_commit-November_13,_2021-informational?style=flat-square)](BADGES_GUIDE.md#commit-date)
+[![tag](https://img.shields.io/github/v/tag/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/tags) [![release](https://img.shields.io/github/v/release/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
 
-[![license](https://img.shields.io/badge/license-MIT-informational?style=flat-square)](LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square)](code_of_conduct.md)
+[![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits)
 
-[![platform](https://img.shields.io/badge/platform-macOS_10.11+-important?style=flat-square)](https://en.wikipedia.org/wiki/Computing_platform)
+[![licence](https://img.shields.io/github/license/ololx/sbc-bitpool-expander?style=flat)](LICENCE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md)
+
+![repo_size](https://img.shields.io/github/repo-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/sbc-bitpool-expander?style=flat&logo=github)
 
 ---
 
