@@ -14,8 +14,6 @@ This is a simple tool for the sound quality improving of wireless headphones wit
 
 ![repo_size](https://img.shields.io/github/repo-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/sbc-bitpool-expander?style=flat&logo=github)
 
----
-
 ## 📇 Table of Contents
 
 - [About](#about)
