@@ -8,9 +8,18 @@ on:
 
 jobs:
   build:
-
-    runs-on: macos-10.11.6
-
+    name: Build
+    runs-on: macos-10.11      
+    
+    strategy:
+      matrix:
+        xcode: ['xcode9.2']
+        include:
+            - xcode: 'xcode9.2'
+              xcode-path: '/Applications/Xcode_9.2.app/Contents/Developer'
+              upload-dist: false
+              run-analyzer: false
+    
     steps:
     - uses: actions/checkout@v2
     - name: Build
