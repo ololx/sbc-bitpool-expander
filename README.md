@@ -1,5 +1,5 @@
 <div align="right">
-  <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/> <img src="https://img.shields.io/github/stars/ololx/sbc-bitpool-expander?style=social" alt="stars"/> <img src="https://img.shields.io/github/forks/ololx/sbc-bitpool-expander?style=social" alt="forks"/> <img src="https://img.shields.io/github/watchers/ololx/sbc-bitpool-expander?style=social" alt="social"/>
+  <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/>
 </div> 
 
 # sbc-bitpool-expander
