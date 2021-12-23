@@ -7,6 +7,7 @@
 This is a simple tool for the sound quality improving of wireless headphones with the sbc codec on a mac.
 
 [![tag](https://img.shields.io/github/v/tag/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/tags) [![release](https://img.shields.io/github/v/release/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_shield)
 
 [![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits)
 
@@ -217,3 +218,6 @@ For the versioning is used [Semantic Versioning](http://semver.org/). For the ve
 ## 🔏 Licensing
 
 This project is licensed under the MIT license - see the [lisence](LICENSE) document for details.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_large)
