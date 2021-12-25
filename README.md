@@ -1,6 +1,9 @@
 <div align="right">
   <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/>
-</div> 
+  <a href="https://github.com/ololx/birthday-cake/discussions" target="_blank">
+		<img src="https://img.shields.io/github/discussions/ololx/birthday-cake?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
+	</a>
+</div>
 
 # sbc-bitpool-expander
 
@@ -8,11 +11,13 @@ This is a simple tool for the sound quality improving of wireless headphones wit
 
 [![tag](https://img.shields.io/github/v/tag/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/tags) [![release](https://img.shields.io/github/v/release/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
 
-[![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits)
+[![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md) [![licence](https://img.shields.io/github/license/ololx/sbc-bitpool-expander?style=flat)](LICENCE) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_shield)
+[![licence](https://img.shields.io/github/license/ololx/sbc-bitpool-expander?style=flat)](LICENCE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_shield)
 
 ![repo_size](https://img.shields.io/github/repo-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/sbc-bitpool-expander?style=flat&logo=github)
+
+![platform](https://img.shields.io/badge/platform-OS_X_10.11+-important?style=flat)
 
 ## 📇 Table of Contents
 
