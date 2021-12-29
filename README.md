@@ -1,7 +1,7 @@
 <div align="right">
   <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/>
   <a href="https://github.com/ololx/birthday-cake/discussions" target="_blank">
-		<img src="https://img.shields.io/github/discussions/ololx/birthday-cake?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
+		<img src="https://img.shields.io/github/discussions/ololx/sbc-bitpool-expander?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
 	</a>
 </div>
 
