@@ -1,6 +1,6 @@
 <div align="right">
   <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/>
-  <a href="https://github.com/ololx/birthday-cake/discussions" target="_blank">
+	<a href="https://github.com/ololx/sbc-bitpool-expander/discussions" target="_blank">
 		<img src="https://img.shields.io/github/discussions/ololx/sbc-bitpool-expander?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
 	</a>
 </div>
@@ -17,7 +17,7 @@ This is a simple tool for the sound quality improving of wireless headphones wit
 
 ![repo_size](https://img.shields.io/github/repo-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/sbc-bitpool-expander?style=flat&logo=github)
 
-![platform](https://img.shields.io/badge/platform-OS_X_10.11+-important?style=flat)
+![platform](https://img.shields.io/badge/platform-OS_X_10.11_|_10.12_|_10.13_|_10.14-important?style=flat)
 
 ## 📇 Table of Contents
 
