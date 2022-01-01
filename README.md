@@ -72,7 +72,7 @@ The sbc-bitpool-expander is a mac automator program, which executes a shell comm
 
 This animation demonstrates how is the simple to use this tool.
 
-![The tool demo](https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/sbc-bitpool-expander-demo.gif?raw=true)
+<img align="center" width="640" src="https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/sbc-bitpool-expander-demo.gif?raw=true"/>
 
 ### Effect
 This pictures demonstrates how the increasing bit rate from 261 kb/s (BEFORE) to 357 kb/s (AFTER) by the bitpool increases after launching this tool.
