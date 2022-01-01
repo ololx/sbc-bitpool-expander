@@ -721,7 +721,7 @@
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-3L-oF6">
                                             <rect key="frame" x="35" y="93" width="259" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="132.67157956932775" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
+                                            <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="200" doubleValue="53" tickMarkPosition="above" numberOfTickMarks="50" sliderType="linear" id="JMA-V5-8o0"/>
                                             <connections>
                                                 <accessibilityConnection property="link" destination="9s8-wA-MGI" id="Tin-TL-Mpq"/>
                                                 <binding destination="dHg-Nj-ixM" name="value" keyPath="values.bitpoolMinInput" id="T9N-bH-Toh">
@@ -748,7 +748,7 @@
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Rj4-dc-XhG">
                                                 <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" formatWidth="-1" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="42" id="O6P-Fi-LJz">
                                                     <real key="minimum" value="0.0"/>
-                                                    <real key="maximum" value="100"/>
+                                                    <real key="maximum" value="200"/>
                                                 </numberFormatter>
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>

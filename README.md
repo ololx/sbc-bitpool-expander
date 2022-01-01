@@ -1,6 +1,10 @@
 <div align="right">
-  <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/> <img src="https://img.shields.io/github/stars/ololx/sbc-bitpool-expander?style=social" alt="stars"/> <img src="https://img.shields.io/github/forks/ololx/sbc-bitpool-expander?style=social" alt="forks"/> <img src="https://img.shields.io/github/watchers/ololx/sbc-bitpool-expander?style=social" alt="social"/>
-</div> 
+  <img src="https://img.shields.io/github/downloads/ololx/sbc-bitpool-expander/total?style=social" alt="downloads"/>
+  <a href="https://github.com/ololx/sbc-bitpool-expander/discussions" target="_blank">
+		<img src="https://img.shields.io/github/discussions/ololx/sbc-bitpool-expander?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
+	</a>
+</div>
+
 
 # sbc-bitpool-expander
 
@@ -8,11 +12,13 @@ This is a simple tool for the sound quality improving of wireless headphones wit
 
 [![tag](https://img.shields.io/github/v/tag/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/tags) [![release](https://img.shields.io/github/v/release/ololx/sbc-bitpool-expander?style=flat&include_prereleases&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
 
-[![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits)
+[![osslifecycle](https://img.shields.io/osslifecycle/ololx/sbc-bitpool-expander?style=flat)](OSSMETADATA) [![last_commit](https://img.shields.io/github/last-commit/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/commits) [![release_date](https://img.shields.io/github/release-date/ololx/sbc-bitpool-expander?style=flat&logo=github)](https://github.com/ololx/sbc-bitpool-expander/releases)
 
-[![licence](https://img.shields.io/github/license/ololx/sbc-bitpool-expander?style=flat)](LICENCE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md)
+[![licence](https://img.shields.io/github/license/ololx/sbc-bitpool-expander?style=flat)](LICENCE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_shield)
 
 ![repo_size](https://img.shields.io/github/repo-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/sbc-bitpool-expander?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/sbc-bitpool-expander?style=flat&logo=github)
+
+![platform](https://img.shields.io/badge/platform-OS_X_10.11_|_OS_X_10.12_|_OS_X_10.13_|_OS_X_10.14-important?style=flat)
 
 ## 📇 Table of Contents
 
@@ -67,7 +73,7 @@ The sbc-bitpool-expander is a mac automator program, which executes a shell comm
 
 This animation demonstrates how is the simple to use this tool.
 
-![The tool demo](https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/sbc-bitpool-expander-demo.gif?raw=true)
+<img align="center" src="https://github.com/ololx/sbc-bitpool-expander/blob/assets/demo/sbc-bitpool-expander-demo.gif?raw=true"/>
 
 ### Effect
 This pictures demonstrates how the increasing bit rate from 261 kb/s (BEFORE) to 357 kb/s (AFTER) by the bitpool increases after launching this tool.
@@ -217,3 +223,6 @@ For the versioning is used [Semantic Versioning](http://semver.org/). For the ve
 ## 🔏 Licensing
 
 This project is licensed under the MIT license - see the [lisence](LICENSE) document for details.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_large)
