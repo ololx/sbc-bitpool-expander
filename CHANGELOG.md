@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Other UI elements for the SBC codec settings.
 
+## [4.0.1] - 2022-01-01
+
+### Fixed
+
+- The min value in input `Min/Initial bitpool`; It was 100 for slider with max = 200.
+
 ## [4.0.0] - 2021-11-13
 
 ### Removed
