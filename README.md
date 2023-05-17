@@ -222,6 +222,3 @@ For the versioning is used [Semantic Versioning](http://semver.org/). For the ve
 ## 🔏 Licensing
 
 This project is licensed under the MIT license - see the [lisence](LICENSE) document for details.
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fsbc-bitpool-expander?ref=badge_large)
